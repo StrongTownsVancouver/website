@@ -1,0 +1,19 @@
+---
+interface Props {
+    background: string;
+}
+
+const { background } = Astro.props;
+---
+
+<div
+    class="mx-auto h-full overflow-y-scroll bg-cover bg-scroll bg-bottom bg-no-repeat shadow-lg"
+    style={`background-image: url('${background}')`}
+>
+    <div
+        class="w-full h-full text-white"
+        style="background-color: rgba(0, 0, 0, 0.6)"
+    >
+        <slot />
+    </div>
+</div>

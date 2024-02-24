@@ -14,6 +14,10 @@
 	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
 	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
+	--dark: #0C2340;
+	--light-blue: #A7C6ED;
+	--light-blue-accessible: #5790DB;
+	--yellow: #FFB549;
 }
 @font-face {
 	font-family: 'Atkinson';
@@ -25,6 +29,20 @@
 @font-face {
 	font-family: 'Atkinson';
 	src: url('/fonts/atkinson-bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Synthese Web';
+	src: url('/fonts/syntheseweb-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Synthese Web';
+	src: url('/fonts/syntheseweb-bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -43,7 +61,6 @@ body {
 	line-height: 1.7;
 }
 main {
-	width: 720px;
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;
@@ -54,6 +71,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: 'Synthese Web', sans-serif;
 	margin: 0 0 0.5rem 0;
 	color: rgb(var(--black));
 	line-height: 1.2;
