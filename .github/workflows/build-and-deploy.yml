@@ -43,6 +43,11 @@ jobs:
         run: |
           pnpm astro build
         working-directory: ${{ env.BUILD_PATH }}
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: website
+          path: dist/
 
   deploy:
     environment:
@@ -52,6 +57,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
+      - name: Download artifacts
+      - uses: actions/download-artifact@v4
+        with:
+          name: website
+          path: website/
       - name: Cloudflare Pages GitHub Action
         uses: cloudflare/pages-action@v1.5.0
         with:
@@ -62,7 +72,7 @@ jobs:
           # The name of the Pages project to upload to
           projectName: strongtownstest
           # The directory of static assets to upload
-          directory: /dist
+          directory: website/
           # GitHub Token
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           
