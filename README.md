@@ -47,3 +47,7 @@ All commands are run from the root of the project, from a terminal:
 ## ⭐ Want to contribute?
 
 Check out [Astro documentation](https://docs.astro.build) to get familiar with the framwork website is built upon. We are happy to accept contributions, but we don't have an SLA to respond on issues or to review contributions. Please be respectful to other contributors!
+
+### Want to add new blog post?
+
+If you want to add a new blog post, feel free to create a Pull Request with new post placed in [src/content/blog](https://github.com/StrongTownsVancouver/website/tree/main/src/content/blog).
