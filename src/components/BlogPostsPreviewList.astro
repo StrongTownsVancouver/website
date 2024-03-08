@@ -14,7 +14,10 @@ const posts = (await getCollection("blog"))
 ---
 
 <section class="md:flex md:flex-col md:items-center md:mx-auto pt-8">
-    <h2 class="mx-8">Check out our recent posts</h2>
+    <div>
+        <h2 class="mx-8">Check out our recent posts</h2>
+        <p class="mx-8">Keep up with our local actions, news, and events for a resilient Vancouver!</p>
+    </div>
     <ul class="md:flex md:justify-center m-8 max-w-5xl">
         {
             posts.map((post) => (

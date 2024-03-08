@@ -1,5 +1,5 @@
 ---
-title: 'Third post'
+title: 'Why cars are bad for environment?'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 15 2022'
 heroImage: '/blog-placeholder-2.jpg'

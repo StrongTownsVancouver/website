@@ -28,14 +28,14 @@ import logo from "../assets/strong-towns-logo.png";
 </script>
 
 <header class="flex justify-center m-0 mx-auto p-0 px-4">
-	<nav class="grid grid-cols-4 py-4 max-w-7xl items-center justify-between">
+	<nav class="grid grid-cols-8 py-4 max-w-7xl items-center justify-between">
 		<h2 class="m-0 px-1 text-base">
 			<a href="/">
 				<Image src={logo} alt={SITE_TITLE} height={60} />
 			</a>
 		</h2>
 		<div
-			class="md:hidden flex items-center justify-center col-start-4 mx-auto"
+			class="lg:hidden flex items-center justify-center col-start-8 mx-auto"
 		>
 			<button id="hamburger"
 				><svg
@@ -68,12 +68,12 @@ import logo from "../assets/strong-towns-logo.png";
 		<div
 			id="navmenu"
 			class:list={[
-				"hidden md:flex md:grow md:col-start-4 md:w-max pt-2 pb-4",
+				"hidden w-full lg:flex lg:grow lg:col-start-6 lg:w-max pt-2 pb-4",
 			]}
 		>
-			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/about">Our Mission</HeaderLink>
 			<HeaderLink href="/blog">Articles</HeaderLink>
-			<HeaderLink href="/events">Events</HeaderLink>
+			<HeaderLink href="/get-involved">Get Involved</HeaderLink>
 		</div>
 	</nav>
 </header>
