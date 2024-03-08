@@ -50,12 +50,9 @@ jobs:
           path: dist/
 
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
-    name: Deploy
+    name: Deploy to Cloudflare
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v4
