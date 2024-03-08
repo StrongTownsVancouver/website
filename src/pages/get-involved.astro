@@ -4,11 +4,13 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import ContentWithBackground from "../components/ContentWithBackground.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+const PAGE_TITLE = `Get Involved - ${SITE_TITLE}`;
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <Header />

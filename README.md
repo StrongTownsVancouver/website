@@ -2,7 +2,7 @@
 
 This is a repository for the Strong Towns Vancouver local conversation website source code.
 
-You can find this website online at [strongtownsvan.ca](https://strongtownsvan.ca)
+You can find this website online at TBD.
 
 ## 🚀 Project Structure
 
