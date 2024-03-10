@@ -1,22 +1,27 @@
 ---
-import { getCollection } from "astro:content";
-import FormattedDate from "../components/FormattedDate.astro";
+import { getCollection } from 'astro:content'
+import FormattedDate from '../components/FormattedDate.astro'
 
 interface Props {
-    postsLimit: number;
+    postsLimit: number
 }
 
-const { postsLimit } = Astro.props;
+const { postsLimit } = Astro.props
 
-const posts = (await getCollection("blog"))
+const posts = (await getCollection('blog'))
     .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf())
-    .slice(0, postsLimit);
+    .slice(0, postsLimit)
 ---
 
 <section class="md:flex md:flex-col md:items-center md:mx-auto pt-8">
     <div>
-        <h2 class="font-synthese m-0 text-4xl mx-8">Check out our recent posts</h2>
-        <p class="mx-8 mt-4">Keep up with our local actions, news, and events for a resilient Vancouver!</p>
+        <h2 class="font-synthese m-0 text-4xl mx-8">
+            Check out our recent posts
+        </h2>
+        <p class="mx-8 mt-4">
+            Keep up with our local actions, news, and events for a resilient
+            Vancouver!
+        </p>
     </div>
     <ul class="md:flex md:justify-center m-8 max-w-5xl">
         {
@@ -29,8 +34,10 @@ const posts = (await getCollection("blog"))
                             src={post.data.heroImage}
                             alt=""
                         />
-                        <h4 class="pt-3 my-0">{post.data.title}</h4>
-                        <p class="py-1 text-black">
+                        <h4 class="font-synthese mb-2 text-black pt-3 my-0">
+                            {post.data.title}
+                        </h4>
+                        <p class="font-synthese text-sm py-1 text-black">
                             <FormattedDate date={post.data.pubDate} />
                         </p>
                     </a>
