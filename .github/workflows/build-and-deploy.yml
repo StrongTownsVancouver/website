@@ -35,7 +35,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: 'pnpm'
+          cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
         working-directory: ${{ env.BUILD_PATH }}
@@ -65,14 +65,8 @@ jobs:
       - name: Cloudflare Pages GitHub Action
         uses: cloudflare/pages-action@v1.5.0
         with:
-          # Cloudflare API Token
-          apiToken: ${{secrets.CF_PAGES_PAT}}
-          # Cloudflare Account ID
-          accountId: ${{secrets.CF_ACCOUNT_ID}}
-          # The name of the Pages project to upload to
+          apiToken: ${{ secrets.CF_PAGES_PAT }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
           projectName: strongtownstest
-          # The directory of static assets to upload
           directory: website/
-          # GitHub Token
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          

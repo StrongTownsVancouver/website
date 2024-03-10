@@ -1,48 +1,47 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import ContentWithBackground from "../components/ContentWithBackground.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import ContentWithBackground from '../components/ContentWithBackground.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+import PageTitle from '../components/PageTitle.astro'
 ---
 
 <html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
-    <ContentWithBackground background="/steamclock.jpg">
-      <div class="flex justify-center p-12">
-        <h3 class="text-white">Get Involved</h3>
-      </div>
-    </ContentWithBackground>
-    <main class="max-w-5xl">
-      <section>
-        <p>
-          This is only the start! Our ambitious community encompasses
-          individuals of all ages, professions, and backgrounds, united by our
-          passion for walkability, accessibility, housing, and transit. Prepare
-          yourself for engaging and fun community advocacy opportunities to help
-          enhance Vancouver for everyone. Your voice, ideas, and skills enrich
-          our community as we implement our shared vision. Let's work together
-          to reshape Vancouver, together!
-        </p>
-        <p>
-          This is only the beginning! Our ambitious community encompasses
-          individuals of all ages, professions, and backgrounds. We’re making it
-          easier to walk and get around, having affordable places to live, and
-          reliable transit. Get ready to join fun activities that help make
-          Vancouver better for everyone. Your thoughts, ideas, and talents make
-          our community better as we work on our shared dream. Let's work
-          together to make Vancouver even better!
-        </p>
-      </section>
-      <section>
-        <h4>Events</h4>
-        <p>Google Calendar with upcoming events will be here.</p>
-      </section>
-    </main>
-    <Footer />
-  </body>
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        <Header />
+        <PageTitle title="Get Involved" image="/steamclock.jpg" />
+        <main class="max-w-5xl">
+            <section>
+                <p>
+                    This is only the start! Our ambitious community encompasses
+                    individuals of all ages, professions, and backgrounds,
+                    united by our passion for walkability, accessibility,
+                    housing, and transit. Prepare yourself for engaging and fun
+                    community advocacy opportunities to help enhance Vancouver
+                    for everyone. Your voice, ideas, and skills enrich our
+                    community as we implement our shared vision. Let's work
+                    together to reshape Vancouver, together!
+                </p>
+                <p>
+                    This is only the beginning! Our ambitious community
+                    encompasses individuals of all ages, professions, and
+                    backgrounds. We’re making it easier to walk and get around,
+                    having affordable places to live, and reliable transit. Get
+                    ready to join fun activities that help make Vancouver better
+                    for everyone. Your thoughts, ideas, and talents make our
+                    community better as we work on our shared dream. Let's work
+                    together to make Vancouver even better!
+                </p>
+            </section>
+            <section>
+                <h4>Events</h4>
+                <p>Google Calendar with upcoming events will be here.</p>
+            </section>
+        </main>
+        <Footer />
+    </body>
 </html>
