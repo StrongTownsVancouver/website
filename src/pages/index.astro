@@ -1,36 +1,37 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import ContentWithBackground from "../components/ContentWithBackground.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import BlogPostPreviewList from "../components/BlogPostsPreviewList.astro";
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import ContentWithBackground from '../components/ContentWithBackground.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+import BlogPostPreviewList from '../components/BlogPostsPreviewList.astro'
 
-const PAGE_TITLE = `${SITE_TITLE}`;
-const INDEX_PAGE_BLOG_POSTS_LIMIT = 4;
+const INDEX_PAGE_BLOG_POSTS_LIMIT = 4
+const PAGE_TITLE = `${SITE_TITLE}`
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<ContentWithBackground background="/gastown-night.jpg">
-			<main class="pt-12 max-w-5xl">
-				<h3 class="text-white py-6">
-					We're dedicated to making Vancouver strong and resilient.
-				</h3>
-				<p class="py-6">
-					Welcome to Strong Towns Vancouver. Here, you'll find thought-provoking articles, information
-					about upcoming events, and resources to aid in understanding
-					and implementing our mission. We're glad you're here and
-					can't wait for you to join us on this journey.
-				</p>
-			</main>
-		</ContentWithBackground>
-		<BlogPostPreviewList postsLimit={INDEX_PAGE_BLOG_POSTS_LIMIT} />
-		<Footer />
-	</body>
+    <head>
+        <BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        <Header />
+        <ContentWithBackground background="/gastown-night.jpg">
+            <main class="pt-12 max-w-5xl">
+                <h3 class="font-synthese m-0 text-3xl mb-2 text-white py-6">
+                    We're dedicated to making Vancouver strong and resilient.
+                </h3>
+                <p class="py-6">
+                    Welcome to Strong Towns Vancouver. Here, you'll find
+                    thought-provoking articles, information about upcoming
+                    events, and resources to aid in understanding and
+                    implementing our mission. We're glad you're here and can't
+                    wait for you to join us on this journey.
+                </p>
+            </main>
+        </ContentWithBackground>
+        <BlogPostPreviewList postsLimit={INDEX_PAGE_BLOG_POSTS_LIMIT} />
+        <Footer />
+    </body>
 </html>
