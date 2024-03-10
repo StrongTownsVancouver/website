@@ -7,12 +7,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 import BlogPostPreviewList from '../components/BlogPostsPreviewList.astro'
 
 const INDEX_PAGE_BLOG_POSTS_LIMIT = 4
+const PAGE_TITLE = `${SITE_TITLE}`
 ---
 
 <!doctype html>
 <html lang="en">
     <head>
-        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+        <BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
     </head>
     <body>
         <Header />

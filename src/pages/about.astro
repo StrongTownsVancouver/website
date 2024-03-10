@@ -1,15 +1,16 @@
 ---
 import BaseHead from '../components/BaseHead.astro'
-import ContentWithBackground from '../components/ContentWithBackground.astro'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
 import PageTitle from '../components/PageTitle.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+
+const PAGE_TITLE = `Our Mission - ${SITE_TITLE}`
 ---
 
 <html lang="en">
     <head>
-        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+        <BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
     </head>
     <body>
         <Header />
@@ -44,7 +45,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
                 our community understand and implement our mission. But most
                 importantly, it means driving action, no matter how small.
             </p>
-
             <p>
                 We believe that each one of us has a role to play in making
                 Vancouver stronger and more vibrant. Whether it's participating

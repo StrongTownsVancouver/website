@@ -10,12 +10,14 @@ import PageTitle from '../../components/PageTitle.astro'
 const posts = (await getCollection('blog')).sort(
     (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 )
+
+const PAGE_TITLE = `Articles - ${SITE_TITLE}`
 ---
 
 <!doctype html>
 <html lang="en">
     <head>
-        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+        <BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
     </head>
     <body>
         <Header />
