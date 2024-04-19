@@ -2,7 +2,7 @@
 
 This is a repository for the Strong Towns Vancouver local conversation website source code.
 
-You can find this website online at TBD.
+You can find this website online at <https://strongtownsvan.pages.dev/>.
 
 ## 🚀 Project Structure
 
@@ -29,16 +29,19 @@ The `src/content/` directory contains "collections" of related Markdown and MDX 
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
+## 🧞 Getting Started
 
-Strong Towns website uses `pnpm`.
+Strong Towns website uses `pnpm`. In order to run it locally, you need to have Node.js and pnpm installed.
 
-All commands are run from the root of the project, from a terminal:
+- [Installing Node.js](https://nodejs.org/en/download/current)
+- [Installing pnpm](https://pnpm.io/installation)
+
+After Node.js and pnpm installed, you can use command below to run and manage project. All commands are run from the root of the project, from a terminal:
 
 | Command                | Action                                           |
 | :--------------------- | :----------------------------------------------- |
-| `pnpm install`         | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
+| `pnpm install`         | Install website dependencies                           |
+| `pnpm dev`             | Starts local development server at `localhost:4321` with live reload support.      |
 | `pnpm build`           | Build your production site to `./dist/`          |
 | `pnpm preview`         | Preview your build locally, before deploying     |
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
@@ -51,3 +54,7 @@ Check out [Astro documentation](https://docs.astro.build) to get familiar with t
 ### Want to add new blog post?
 
 If you want to add a new blog post, feel free to create a Pull Request with new post placed in [src/content/blog](https://github.com/StrongTownsVancouver/website/tree/main/src/content/blog).
+
+## Deployment
+
+This website is deployed using Cloudflare pages. Deployment happens from `main` branch on every new push. Current production deployment can be found [here](https://github.com/StrongTownsVancouver/website/tree/main). Please talk to any of Strong Towns Vancouver administrators to get access if you need it.
