@@ -2,6 +2,9 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.framework.id": "astro",
   "frontMatter.preview.host": "http://localhost:4321",
+  "frontMatter.website.host": "https://strongtownsvan.pages.dev/",
+  "frontMatter.framework.startCommand": "pnpm run dev",
+  "frontMatter.git.enabled": true,
   "frontMatter.content.publicFolder": "public",
   "frontMatter.content.supportedFileTypes": [
     "md",
@@ -17,10 +20,11 @@
   ],
   "frontMatter.taxonomy.contentTypes": [
     {
-      "name": "blog",
+      "name": "default",
       "previewPath": "'blog'",
       "pageBundle": false,
       "clearEmpty": true,
+      "filePrefix": "yyyyMMdd",
       "fields": [
         {
           "name": "title",
@@ -57,8 +61,5 @@
         }
       ]
     }
-  ],
-  "frontMatter.website.host": "https://strongtownsvan.pages.dev/",
-  "frontMatter.framework.startCommand": "pnpm run dev",
-  "frontMatter.git.enabled": true
+  ]
 }
