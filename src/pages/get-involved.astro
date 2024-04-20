@@ -40,7 +40,17 @@ const PAGE_TITLE = `Get Involved - ${SITE_TITLE}`
             </section>
             <section>
                 <h4 class="font-synthese text-2xl mb-2">Events</h4>
-                <p>Google Calendar with upcoming events will be here.</p>
+                <iframe
+                    src="https://embed.styledcalendar.com/#itqSaKdVwkGqwxlBNgyB"
+                    title="Styled Calendar"
+                    class="styled-calendar-container"
+                    style="width: 100%; border: none;"
+                    data-cy="calendar-embed-iframe"></iframe>
+                <script
+                    async
+                    type="module"
+                    src="https://embed.styledcalendar.com/assets/parent-window.js"
+                ></script>
             </section>
         </main>
         <Footer />
