@@ -29,10 +29,9 @@ const posts = (await getCollection('blog'))
                 <li class="mx-2">
                     <a href={`/blog/${post.slug}/`}>
                         <img
-                            width={720}
-                            height={360}
+                            class="object-cover w-[480px] h-[180px]"
                             src={post.data.heroImage}
-                            alt=""
+                            alt={post.data.title}
                         />
                         <h4 class="font-synthese mb-2 text-black pt-3 my-0">
                             {post.data.title}
