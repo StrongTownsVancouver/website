@@ -2,7 +2,7 @@
 
 This is a repository for the Strong Towns Vancouver local conversation website source code.
 
-You can find this website online at <https://strongtownsvan.pages.dev/>.
+You can find this website online at <https://strongtownsvan.org/>.
 
 ## 🚀 Project Structure
 
@@ -33,19 +33,19 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 Strong Towns website uses `pnpm`. In order to run it locally, you need to have Node.js and pnpm installed.
 
-- [Installing Node.js](https://nodejs.org/en/download/current)
-- [Installing pnpm](https://pnpm.io/installation)
+-   [Installing Node.js](https://nodejs.org/en/download/current)
+-   [Installing pnpm](https://pnpm.io/installation)
 
 After Node.js and pnpm installed, you can use command below to run and manage project. All commands are run from the root of the project, from a terminal:
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `pnpm install`         | Install website dependencies                           |
-| `pnpm dev`             | Starts local development server at `localhost:4321` with live reload support.      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+| Command                | Action                                                                        |
+| :--------------------- | :---------------------------------------------------------------------------- |
+| `pnpm install`         | Install website dependencies                                                  |
+| `pnpm dev`             | Starts local development server at `localhost:4321` with live reload support. |
+| `pnpm build`           | Build your production site to `./dist/`                                       |
+| `pnpm preview`         | Preview your build locally, before deploying                                  |
+| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check`                              |
+| `pnpm astro -- --help` | Get help using the Astro CLI                                                  |
 
 ## ⭐ Want to contribute?
 
@@ -57,4 +57,4 @@ If you want to add a new blog post, feel free to create a Pull Request with new 
 
 ## Deployment
 
-This website is deployed using Cloudflare pages. Deployment happens from `main` branch on every new push. Current production deployment can be found [here](https://github.com/StrongTownsVancouver/website/tree/main). Please talk to any of Strong Towns Vancouver administrators to get access if you need it.
+This website is deployed using Cloudflare pages. Deployment happens from `main` branch on every new push. Current production deployment can be found [here](https://dash.cloudflare.com/f722cdce5f340e4988649624ffd3de49/pages/view/strongtownsvan). Please talk to any of Strong Towns Vancouver administrators to get access if you need it.
