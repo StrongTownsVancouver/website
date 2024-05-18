@@ -36,10 +36,8 @@ const { title, description, pubDate, updatedDate, heroImage, author } =
                         )
                     }
                 </div>
-                <div
-                    class="w-full max-w-[calc(100% - 2em)] m-auto p-4 text-gray-950"
-                >
-                    <div class="mb-4 py-4 px-0 text-center text-2xl">
+                <div class="w-full max-w-[calc(100% - 2em)] m-auto p-4">
+                    <div class="mb-4 py-4 px-0 text-center text-lg">
                         <div class="flex justify-center">
                             <div class="mb-2 px-1">
                                 Posted
@@ -55,7 +53,10 @@ const { title, description, pubDate, updatedDate, heroImage, author } =
                             </div>
                             <span class="mb-2 px-1">by {author}</span>
                         </div>
-                        <h1 class="my-4 text-4xl">{title}</h1>
+                        <h1 class="font-synthese my-2 text-4xl">{title}</h1>
+                        <span class="font-synthese my-4 text-lg"
+                            >{description}</span
+                        >
                         <hr />
                     </div>
                     <slot />
