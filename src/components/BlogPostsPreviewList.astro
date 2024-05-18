@@ -4,12 +4,13 @@ import FormattedDate from '../components/FormattedDate.astro'
 
 interface Props {
     postsLimit: number
+    maxTitleLength: number
 }
 
-const { postsLimit } = Astro.props
+const { postsLimit, maxTitleLength } = Astro.props
 
 const posts = (await getCollection('blog'))
-    .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf())
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
     .slice(0, postsLimit)
 ---
 
@@ -29,15 +30,19 @@ const posts = (await getCollection('blog'))
                 <li class="mx-2">
                     <a href={`/blog/${post.slug}/`}>
                         <img
-                            class="object-cover w-[480px] h-[180px]"
+                            class="object-cover w-[300px] h-[200px] max-w-[300px] max-h-[200px]"
                             src={post.data.heroImage}
                             alt={post.data.title}
                         />
                         <h4 class="font-synthese mb-2 text-black pt-3 my-0">
-                            {post.data.title}
+                            {post.data.title.length > maxTitleLength
+                                ? `${post.data.title.slice(0, maxTitleLength)}...`
+                                : post.data.title}
                         </h4>
                         <p class="font-synthese text-sm py-1 text-black">
                             <FormattedDate date={post.data.pubDate} />
+                            {' by '}
+                            {post.data.author}
                         </p>
                     </a>
                 </li>

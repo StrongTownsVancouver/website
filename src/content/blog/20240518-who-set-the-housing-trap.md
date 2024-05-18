@@ -1,5 +1,5 @@
 ---
-title: Who Set the Housing Trap
+title: Who Set the Housing Trap?
 description: ''
 pubDate: 2024-05-18T20:35:10.115Z
 author: 'Eli'

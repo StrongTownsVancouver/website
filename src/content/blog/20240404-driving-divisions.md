@@ -1,5 +1,5 @@
 ---
-title: 'Driving Divisions: How Car Dependency Exacerbates Social Segregation'
+title: 'How Car Dependency Exacerbates Social Segregation?'
 description: ''
 pubDate: 'Apr 08 2024'
 heroImage: '/blog-assets/blog-placeholder.jpg'
