@@ -1,4 +1,5 @@
 ---
+type: 'default'
 title: 'The Future of Transit in Steveston Village'
 description: 'A Close Look at Proposed Bus Exchange Impacts'
 pubDate: 'Apr 04 2024'

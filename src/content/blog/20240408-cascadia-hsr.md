@@ -1,4 +1,5 @@
 ---
+type: 'default'
 title: 'Cascadia High-Speed Rail Project'
 description: 'Project Connecting Vancouver and Seattle is being Considered'
 pubDate: 'Apr 04 2024'

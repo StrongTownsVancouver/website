@@ -1,4 +1,5 @@
 ---
+type: 'default'
 title: 'How Car Dependency Exacerbates Social Segregation?'
 description: ''
 pubDate: 'Apr 08 2024'

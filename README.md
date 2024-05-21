@@ -33,8 +33,8 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 Strong Towns website uses `pnpm`. In order to run it locally, you need to have Node.js and pnpm installed.
 
--   [Installing Node.js](https://nodejs.org/en/download/current)
--   [Installing pnpm](https://pnpm.io/installation)
+- [Installing Node.js](https://nodejs.org/en/download/current)
+- [Installing pnpm](https://pnpm.io/installation)
 
 After Node.js and pnpm installed, you can use command below to run and manage project. All commands are run from the root of the project, from a terminal:
 

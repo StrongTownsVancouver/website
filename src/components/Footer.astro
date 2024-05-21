@@ -2,15 +2,8 @@
 const today = new Date()
 ---
 
-<footer>
-    <p class="text-sm max-w-5xl m-0 mx-auto">
-        &copy; {today.getFullYear()} Strong Towns Vancouver. Strong Towns Vancouver
-        is the local conversation for Vancouver, BC, Canada. We believe in creating
-        communities which work for everyone. Vancouver is situated on the unceded
-        traditional territories of the xʷməθkʷəy̓əm (Musqueam), Sḵwx̱wú7mesh (Squamish),
-        and səlilwətaɬ (Tsleil-Waututh) Nations.
-    </p>
-    <div class="social-links">
+<footer class="text-center">
+    <div class="flex justify-center gap-4 mb-8">
         <a href="https://instagram.com/strongtownsvancouver" target="_blank">
             <span class="sr-only"
                 >Follow Strong Towns Vancouver on Instagram</span
@@ -45,19 +38,19 @@ const today = new Date()
             </svg>
         </a>
     </div>
+    <p class="text-sm max-w-5xl m-0 mx-auto">
+        &copy; {today.getFullYear()} Strong Towns Vancouver. Strong Towns Vancouver
+        is the local conversation for Vancouver, BC, Canada. We believe in creating
+        communities which work for everyone. Vancouver is situated on the unceded
+        traditional territories of the xʷməθkʷəy̓əm (Musqueam), Sḵwx̱wú7mesh (Squamish),
+        and səlilwətaɬ (Tsleil-Waututh) Nations.
+    </p>
 </footer>
 <style>
     footer {
         padding: 2em 1em 6em 1em;
         background: var(--dark);
         color: white;
-        text-align: center;
-    }
-    .social-links {
-        display: flex;
-        justify-content: center;
-        gap: 1em;
-        margin-top: 1em;
     }
     .social-links a {
         text-decoration: none;
