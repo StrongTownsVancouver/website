@@ -2,6 +2,7 @@
 title: 'The Future of Transit in Steveston Village'
 description: 'A Close Look at Proposed Bus Exchange Impacts'
 pubDate: 'Apr 04 2024'
+updatedDate: 'May 20 2024'
 heroImage: '/blog-assets/20240408-steveston-village/steveston-image-1.jpg'
 author: 'Manav Sharma'
 ---
@@ -28,7 +29,7 @@ Another point of concern is the proposed locations of stops and layovers. Ideall
 
 ## The Importance of Careful Consideration and Public Input
 
-Changes to public transit have the potential to alter a community's fabric drastically. That's why it's so important to consider these decisions and seek ample public input carefully. Er Jun represented Strong Towns Vancouver at the open house, asking questions and conducting extensive research to determine feasible alternativJun'sis research looked at bus routing, publicly owned lands, upcoming developments in the area, and exemplary bus exchange projects to urge Richmond City Councillors to explore other alternatives.
+Changes to public transit have the potential to alter a community's fabric drastically. That's why it's so important to consider these decisions and seek ample public input carefully. Erjun represented Strong Towns Vancouver at the open house, asking questions and conducting extensive research to determine feasible alternatives. Erjun's research looked at bus routing, publicly owned lands, upcoming developments in the area, and exemplary bus exchange projects to urge Richmond City Councillors to explore other alternatives.
 
 ## Conclusion
 

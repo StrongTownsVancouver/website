@@ -2,7 +2,8 @@
 title: 'How Car Dependency Exacerbates Social Segregation?'
 description: ''
 pubDate: 'Apr 08 2024'
-heroImage: '/blog-assets/blog-placeholder.jpg'
+updatedDate: 'May 20 2024'
+heroImage: '/blog-assets/20240404-driving-divisions/car-dependency.png'
 author: 'Manav Sharma'
 ---
 
