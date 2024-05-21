@@ -8,7 +8,7 @@ import FormattedDate from '../../components/FormattedDate.astro'
 import PageTitle from '../../components/PageTitle.astro'
 
 const posts = (await getCollection('blog')).sort(
-    (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
 
 const PAGE_TITLE = `Articles - ${SITE_TITLE}`
@@ -24,15 +24,15 @@ const PAGE_TITLE = `Articles - ${SITE_TITLE}`
         <PageTitle title="Articles" image="/steamclock.jpg" />
         <main class="max-w-5xl">
             <p>
-                Welcome to our News and Updates section! This is your go-to
-                destination for all the latest happenings, actions, and local
-                news from Strong Towns Vancouver. Here, we share our
-                initiatives, breakthroughs, and upcoming events shaping our
-                city. Stay informed and engaged as we work together to create a
-                stronger, more resilient Vancouver.
+                Welcome to our articles section! This is your go-to destination
+                for all the latest happenings, actions, and local news from
+                Strong Towns Vancouver. Here, we share our initiatives,
+                breakthroughs, and upcoming events shaping our city. Stay
+                informed and engaged as we work together to create a stronger,
+                more resilient Vancouver.
             </p>
-            <section>
-                <ul class="flex flex-wrap gap-8 list-none m-0 p-0">
+            <section class="mt-12">
+                <ul class="flex flex-wrap gap-8 list-none m-0 p-1">
                     {
                         posts.map((post) => (
                             <li class="md:w-[calc(50%-1rem)] md:first:w-full md:first:mb-4 mb-4 text-center">
@@ -41,19 +41,19 @@ const PAGE_TITLE = `Articles - ${SITE_TITLE}`
                                     class="block no-underline transition-all duration-200 hover:text-accent"
                                 >
                                     <img
-                                        width={720}
-                                        height={360}
                                         src={post.data.heroImage}
-                                        alt=""
-                                        class="mb-2 rounded-lg first:w-full"
+                                        alt={post.data.title}
+                                        class="mb-2 rounded-lg object-cover md:h-[360px] md:max-h-[360px] h-[280px] max-h-[280px] first:w-full"
                                     />
-                                    <h4 class="font-synthese mb-2 m-0 text-2xl text-black leading-none">
+                                    <h3 class="font-synthese mt-6 mb-2 m-0 text-2xl text-black leading-none">
                                         {post.data.title}
-                                    </h4>
+                                    </h3>
                                     <p class="font-synthese text-base py-1 text-black">
                                         <FormattedDate
                                             date={post.data.pubDate}
                                         />
+                                        {' by '}
+                                        {post.data.author}
                                     </p>
                                 </a>
                             </li>
