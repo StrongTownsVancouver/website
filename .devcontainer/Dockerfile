@@ -32,7 +32,7 @@ RUN groupadd --gid $USER_GID $USERNAME && \
 RUN usermod -aG sudo dev
 USER dev
 
-WORKDIR /home/dev
+RUN mkdir /home/dev/workspace && chown -R $USER_UID:$USER_GID /home/dev/workspace
 
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 RUN echo "alias ls=eza" >> $HOME/.zshrc && \

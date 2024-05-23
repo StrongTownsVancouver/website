@@ -4,6 +4,7 @@
     "containerUser": "dev",
     "workspaceMount": "source=${localWorkspaceFolder},target=/home/dev/workspace,type=bind",
     "workspaceFolder": "/home/dev/workspace",
+    "postCreateCommand": "pnpm install",
     "build": {
         "args": {
             "PLATFORM": "linux/amd64"
