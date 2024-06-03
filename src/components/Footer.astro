@@ -1,4 +1,6 @@
 ---
+import SvgLink from './SvgLink.astro'
+
 interface LearnMoreLink {
     name: string
     link: string
@@ -10,11 +12,11 @@ const links: LearnMoreLink[] = [
         link: 'https://strongtowns.org/',
     },
     {
-        name: 'ST Nanaimo',
+        name: 'Strong Towns Nanaimo',
         link: 'https://www.beautifulnanaimo.ca/',
     },
     {
-        name: 'ST Langley',
+        name: 'Strong Towns Langley',
         link: 'https://strongtownslangley.org/',
     },
     {
@@ -27,17 +29,16 @@ const today = new Date()
 ---
 
 <footer class="text-center bg-st-black text-white pt-8 px-4 pb-24">
-    <div class="flex justify-between px-4 mb-10 max-w-3xl mx-auto">
-        <div class="flex flex-col justify-between">
-            <span class="text-left">Connect with us</span>
-            <div class="flex justify-center gap-4">
-                <a
+    <div
+        class="flex flex-col md:flex-row justify-between px-4 mb-10 max-w-3xl mx-auto"
+    >
+        <div class="flex flex-col">
+            <span class="text-left pb-2">Connect with us</span>
+            <div class="flex flex-col justify-center gap-4 pl-1 pt-2">
+                <SvgLink
+                    text="Follow us on Instagram"
                     href="https://instagram.com/strongtownsvancouver"
-                    target="_blank"
                 >
-                    <span class="sr-only"
-                        >Follow Strong Towns Vancouver on Instagram</span
-                    >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 50 50"
@@ -48,11 +49,11 @@ const today = new Date()
                             d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"
                             fill="#FFF"></path>
                     </svg>
-                </a>
-                <a href="https://discord.com/invite/RXabm7CS46" target="_blank">
-                    <span class="sr-only"
-                        >Join Strong Towns Vancouver Discord</span
-                    >
+                </SvgLink>
+                <SvgLink
+                    text="Join our Discord"
+                    href="https://discord.com/invite/RXabm7CS46"
+                >
                     <svg
                         width="32px"
                         height="32px"
@@ -68,18 +69,20 @@ const today = new Date()
                             ></path>
                         </g>
                     </svg>
-                </a>
+                </SvgLink>
             </div>
         </div>
 
-        <div class="flex flex-col justify-between">
-            <span class="text-right">Learn more</span>
-            <div class="flex flex-col text-right">
+        <div class="flex flex-col mt-4 md:mt-0">
+            <span class="text-left md:text-right pb-2">Learn more</span>
+            <div
+                class="flex flex-col text-left md:text-right pl-2 md:pr-1 md:pl-0"
+            >
                 {
                     links.map((link) => (
                         <a
                             href={link.link}
-                            class="text-white text-base hover:text-st-lightblue pt-1"
+                            class="text-white text-sm hover:text-st-lightblue pt-2"
                         >
                             {link.name}
                         </a>
