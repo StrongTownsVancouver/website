@@ -1,7 +1,6 @@
 ---
 title: "Experience Car-Free Gastown: A Stroll Through Vancouver's Water Street Pedestrian Zone"
 pubDate: 2024-07-04T05:00:28.739Z
-updatedDate: 2024-07-04T05:00:28.739Z
 heroImage: /blog-assets/20240704-car-free-gastown/gastown-meeting.jpg
 author: Manav Sharma
 type: default
