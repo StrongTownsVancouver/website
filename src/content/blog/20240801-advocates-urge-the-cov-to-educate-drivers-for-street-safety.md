@@ -27,6 +27,7 @@ The counter-campaign began as a grassroots effort organized and crowd-funded by 
 <center>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Walk YOUR wheels and slow YOUR roll. Great campaign from <a href="https://twitter.com/StrongTowns?ref_src=twsrc%5Etfw">@StrongTowns</a> Vancouver - when it comes to road safety, they understand what the city doesn&#39;t! <a href="https://t.co/U2uABr9FJQ">pic.twitter.com/U2uABr9FJQ</a></p>&mdash; VisionZeroVancouver (@VisionZeroYVR) <a href="https://twitter.com/VisionZeroYVR/status/1819140067287617788?ref_src=twsrc%5Etfw">August 1, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </center>
+<br/>
 
 ## Key Messages of the Counter-Campaign
 
