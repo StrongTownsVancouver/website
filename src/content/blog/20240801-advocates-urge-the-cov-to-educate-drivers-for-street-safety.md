@@ -1,6 +1,7 @@
 ---
-title: Advocates Urge the City of Vancouver to Educate Drivers of Cars for Street Safety
+title: Vancouver Advocates Urge for Motorist Safety Education
 pubDate: 2024-08-01
+updatedDate: 2024-08-03
 heroImage: /blog-assets/20240801-advocates-urge-the-cov-to-educate-drivers-for-street-safety/4.png
 author: Strong Towns Vancouver // Manav Sharma
 type: default
