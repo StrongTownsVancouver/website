@@ -5,7 +5,8 @@ heroImage: /blog-assets/20241006-bc-2024-election-an-urbanist-guide/title-vote.p
 author: Strong Towns Vancouver
 ---
 
-> Register to vote right now at <u>[eregister.electionsbc.gov.bc.ca](https://eregister.electionsbc.gov.bc.ca)</u>. It takes under 5 minutes! If you are a Canadian citizen living in BC over the age of 18, your vote could determine if rent can finally be affordable, or if buses disappear from Vancouver. Don’t wait, register to vote!
+> **Register to vote right now at <u>[eregister.electionsbc.gov.bc.ca](https://eregister.electionsbc.gov.bc.ca)</u>. It takes under 5 minutes! If you are a Canadian citizen living in BC over the age of 18, your vote could determine if rent can finally be affordable, or if buses disappear from Vancouver.**<br/>
+> **Don’t wait, register to vote!**
 
 </br>
 

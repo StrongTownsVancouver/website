@@ -1,23 +1,14 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-    --accent: #2337ff;
     --black: 15, 18, 25;
     --gray: 96, 115, 159;
     --gray-light: 229, 233, 240;
     --gray-dark: 34, 41, 57;
     --gray-gradient: rgba(var(--gray-light), 50%), #fff;
 }
-
-
 
 @font-face {
     font-family: 'Atkinson';
@@ -69,8 +60,8 @@ body {
     word-wrap: break-word;
     overflow-wrap: break-word;
     color: rgb(var(--gray-dark));
-    font-size: 20px;
-    line-height: 1.7;
+
+    @apply text-lg leading-7;
 }
 
 main {
@@ -86,10 +77,6 @@ b {
 
 p {
     margin-bottom: 1em;
-}
-
-.prose p {
-    margin-bottom: 2em;
 }
 
 textarea {
@@ -124,11 +111,6 @@ pre {
 
 pre>code {
     all: unset;
-}
-
-hr {
-    border: none;
-    border-top: 1px solid rgb(var(--gray-light));
 }
 
 @media (max-width: 720px) {

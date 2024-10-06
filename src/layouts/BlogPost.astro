@@ -24,11 +24,23 @@ const { title, description, pubDate, updatedDate, heroImage, author } =
             }
 
             main {
-                @apply text-lg leading-7;
+                @apply text-base md:text-lg md:leading-7;
             }
 
             main * a {
                 @apply underline hover:text-blue-600;
+            }
+
+            main * p {
+                @apply text-lg leading-7;
+            }
+
+            main * h2 {
+                @apply md:text-4xl text-2xl mb-6;
+            }
+
+            main * h3 {
+                @apply md:text-3xl text-xl mb-4;
             }
 
             main * blockquote {
@@ -41,25 +53,9 @@ const { title, description, pubDate, updatedDate, heroImage, author } =
             }
 
             blockquote > p {
-                @apply text-2xl;
+                @apply md:text-xl md:leading-9 leading-7;
                 padding-top: 5px;
                 padding-bottom: 5px;
-            }
-
-            main * img {
-                max-width: 650px;
-            }
-
-            main * p {
-                @apply text-lg leading-7;
-            }
-
-            main * h2 {
-                @apply text-4xl mb-6;
-            }
-
-            main * h3 {
-                @apply text-3xl mb-4;
             }
         </style>
     </head>
@@ -101,7 +97,7 @@ const { title, description, pubDate, updatedDate, heroImage, author } =
                                 )
                             }
                         </div>
-                        <h2 class="font-synthese my-2 md:text-4xl text-xls">
+                        <h2 class="font-synthese my-2 md:text-4xl text-3xl">
                             {title}
                         </h2>
                         <span class="font-synthese my-4 text-lg"
