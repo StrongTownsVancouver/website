@@ -4,6 +4,10 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --accent: #2337ff;
     --black: 15, 18, 25;
@@ -12,6 +16,8 @@
     --gray-dark: 34, 41, 57;
     --gray-gradient: rgba(var(--gray-light), 50%), #fff;
 }
+
+
 
 @font-face {
     font-family: 'Atkinson';
@@ -121,10 +127,14 @@ pre>code {
 }
 
 blockquote {
-    border-left: 4px solid var(--accent);
-    padding: 0 0 0 20px;
-    margin: 0px;
-    font-size: 1.333em;
+    border-left: 6px solid #a7c6ed;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 20px;
+    font-size: 1.3rem;
 }
 
 hr {

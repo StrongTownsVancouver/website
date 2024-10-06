@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@astrojs/check':
-        specifier: ^0.5.5
+        specifier: ^0.5.6
         version: 0.5.6(prettier@3.2.5)(typescript@5.3.3)
       '@astrojs/mdx':
         specifier: ^2.1.1
@@ -18,13 +18,13 @@ importers:
         specifier: ^4.0.5
         version: 4.0.5
       '@astrojs/sitemap':
-        specifier: ^3.1.0
+        specifier: ^3.1.1
         version: 3.1.1
       '@astrojs/tailwind':
         specifier: ^5.1.0
         version: 5.1.0(astro@4.4.9(typescript@5.3.3))(tailwindcss@3.4.1)
       astro:
-        specifier: ^4.4.1
+        specifier: ^4.4.9
         version: 4.4.9(typescript@5.3.3)
       astro-robots-txt:
         specifier: ^1.0.0
@@ -968,8 +968,8 @@ packages:
     resolution: {integrity: sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw==}
     engines: {node: '>=14.16'}
 
-  caniuse-lite@1.0.30001591:
-    resolution: {integrity: sha512-PCzRMei/vXjJyL5mJtzNiUCKP59dm8Apqc3PH8gJkMnMXZGox93RbE76jHsmLwmIo6/3nsYIpJtx0O7u5PqFuQ==}
+  caniuse-lite@1.0.30001667:
+    resolution: {integrity: sha512-7LTwJjcRkzKFmtqGsibMeuXmvFDfZq/nzIjnmgCGzKKRVzjD72selLDK1oPF/Oxzmt4fNcPvTDvGqSDG4tCALw==}
 
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -3463,7 +3463,7 @@ snapshots:
   autoprefixer@10.4.18(postcss@8.4.35):
     dependencies:
       browserslist: 4.23.0
-      caniuse-lite: 1.0.30001591
+      caniuse-lite: 1.0.30001667
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -3539,7 +3539,7 @@ snapshots:
 
   browserslist@4.23.0:
     dependencies:
-      caniuse-lite: 1.0.30001591
+      caniuse-lite: 1.0.30001667
       electron-to-chromium: 1.4.690
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
@@ -3559,7 +3559,7 @@ snapshots:
 
   camelcase@7.0.1: {}
 
-  caniuse-lite@1.0.30001591: {}
+  caniuse-lite@1.0.30001667: {}
 
   ccount@2.0.1: {}
 

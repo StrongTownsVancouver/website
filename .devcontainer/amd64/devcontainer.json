@@ -13,7 +13,8 @@
     "customizations": {
         "vscode": {
             "settings": {
-                "extensions.verifySignature": false
+                "extensions.verifySignature": false,
+                "npm.packageManager": "pnpm"
             },
             "extensions": [
                 "astro-build.astro-vscode",

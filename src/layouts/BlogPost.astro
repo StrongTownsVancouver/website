@@ -15,7 +15,33 @@ const { title, description, pubDate, updatedDate, heroImage, author } =
     <head>
         <BaseHead title={title} description={description} image={heroImage} />
         <style is:global>
+            ul,
+            ol {
+                list-style: revert;
+                margin: revert;
+                padding: revert;
+                @apply text-lg leading-7;
+            }
+
+            a {
+                @apply underline hover:text-blue-600;
+            }
+
+            blockquote > p {
+                @apply text-2xl;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            p {
+                @apply text-lg leading-7;
+            }
+
             h2 {
+                @apply text-4xl mb-6;
+            }
+
+            h3 {
                 @apply text-3xl mb-4;
             }
         </style>
