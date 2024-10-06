@@ -21,7 +21,7 @@
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
-      "previewPath": "'blog'",
+      "previewPath": "blog",
       "pageBundle": false,
       "clearEmpty": true,
       "filePrefix": "yyyyMMdd",

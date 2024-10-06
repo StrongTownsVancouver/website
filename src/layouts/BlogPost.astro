@@ -15,8 +15,47 @@ const { title, description, pubDate, updatedDate, heroImage, author } =
     <head>
         <BaseHead title={title} description={description} image={heroImage} />
         <style is:global>
-            h2 {
-                @apply text-3xl mb-4;
+            main * ul,
+            main * ol {
+                list-style: revert;
+                margin: revert;
+                padding: revert;
+                @apply text-lg leading-7;
+            }
+
+            main {
+                @apply text-base md:text-lg md:leading-7;
+            }
+
+            main * a {
+                @apply underline hover:text-blue-600;
+            }
+
+            main * p {
+                @apply text-lg leading-7;
+            }
+
+            main * h2 {
+                @apply md:text-4xl text-2xl mb-6;
+            }
+
+            main * h3 {
+                @apply md:text-3xl text-xl mb-4;
+            }
+
+            main * blockquote {
+                border-left: 6px solid #a7c6ed;
+                border-top-left-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+                padding: 0 1rem;
+                margin: 0 20px 20px;
+                font-size: 1.3rem;
+            }
+
+            blockquote > p {
+                @apply md:text-xl md:leading-9 leading-7;
+                padding-top: 5px;
+                padding-bottom: 5px;
             }
         </style>
     </head>
@@ -31,7 +70,7 @@ const { title, description, pubDate, updatedDate, heroImage, author } =
                             <img
                                 class="block m-0 mx-auto rounded-xl shadow-md w-full max-w-2xl"
                                 src={heroImage}
-                                alt=""
+                                alt={title}
                             />
                         )
                     }
@@ -58,7 +97,7 @@ const { title, description, pubDate, updatedDate, heroImage, author } =
                                 )
                             }
                         </div>
-                        <h2 class="font-synthese my-2 md:text-4xl text-xls">
+                        <h2 class="font-synthese my-2 md:text-4xl text-3xl">
                             {title}
                         </h2>
                         <span class="font-synthese my-4 text-lg"
