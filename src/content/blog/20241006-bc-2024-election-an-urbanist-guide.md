@@ -1,7 +1,7 @@
 ---
 title: "BC 2024 Election: An Urbanist Guide"
 pubDate: 2024-10-06T13:46:48.234Z
-heroImage: /blog-assets/blog-placeholder.jpg
+heroImage: /blog-assets/20241006-bc-2024-election-an-urbanist-guide/title-vote.png
 author: Strong Towns Vancouver
 ---
 
