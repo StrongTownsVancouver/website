@@ -15,16 +15,29 @@ const { title, description, pubDate, updatedDate, heroImage, author } =
     <head>
         <BaseHead title={title} description={description} image={heroImage} />
         <style is:global>
-            ul,
-            ol {
+            main * ul,
+            main * ol {
                 list-style: revert;
                 margin: revert;
                 padding: revert;
                 @apply text-lg leading-7;
             }
 
-            a {
+            main {
+                @apply text-lg leading-7;
+            }
+
+            main * a {
                 @apply underline hover:text-blue-600;
+            }
+
+            main * blockquote {
+                border-left: 6px solid #a7c6ed;
+                border-top-left-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+                padding: 0 1rem;
+                margin: 0 20px 20px;
+                font-size: 1.3rem;
             }
 
             blockquote > p {
@@ -33,15 +46,19 @@ const { title, description, pubDate, updatedDate, heroImage, author } =
                 padding-bottom: 5px;
             }
 
-            p {
+            main * img {
+                max-width: 650px;
+            }
+
+            main * p {
                 @apply text-lg leading-7;
             }
 
-            h2 {
+            main * h2 {
                 @apply text-4xl mb-6;
             }
 
-            h3 {
+            main * h3 {
                 @apply text-3xl mb-4;
             }
         </style>

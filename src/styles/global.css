@@ -126,17 +126,6 @@ pre>code {
     all: unset;
 }
 
-blockquote {
-    border-left: 6px solid #a7c6ed;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    padding: 1rem;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin: 20px;
-    font-size: 1.3rem;
-}
-
 hr {
     border: none;
     border-top: 1px solid rgb(var(--gray-light));
