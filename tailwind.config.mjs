@@ -5,7 +5,7 @@ export default {
         fontFamily: {
             synthese: ['Synthese Web', 'sans-serif'],
             atkinson: ['Atkinson', 'sans-serif'],
-            mixta: ['MixtaSharp', 'sans-serif'],
+            fraunces: ['Fraunces', 'serif']
         },
         extend: {
             colors: {
