@@ -5,6 +5,9 @@ import Footer from '../components/Footer.astro'
 import ContentWithBackground from '../components/ContentWithBackground.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 import BlogPostPreviewList from '../components/BlogPostsPreviewList.astro'
+import BrevoSubscribeStyles from '../components/BrevoSubscribeStyles.astro'
+import BrevoMiniForm from '../components/BrevoMiniForm.astro'
+import BrevoScripts from '../components/BrevoScripts.astro'
 
 const INDEX_PAGE_BLOG_POSTS_LIMIT = 4
 const MAX_TITLE_LENGTH = 50
@@ -15,27 +18,37 @@ const PAGE_TITLE = `${SITE_TITLE}`
 <html lang="en">
     <head>
         <BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
+        <BrevoSubscribeStyles />
     </head>
     <body>
         <Header />
         <ContentWithBackground background="/bus-9.jpg">
-            <main class="pt-12 max-w-5xl">
-                <h2 class="font-synthese m-0 text-3xl mb-2 text-white py-6">
-                    We're dedicated to making Vancouver strong and resilient.
-                </h2>
-                <p class="py-6">
-                    Welcome to Strong Towns Vancouver. Here, you'll find
-                    thought-provoking articles, information about upcoming
-                    events, and resources to aid in understanding and
-                    implementing our mission. We're glad you're here and can't
-                    wait for you to join us on this journey.
-                </p>
+            <main class="md:pt-12 max-w-7xl flex md:flex-row flex-col">
+                <div class="mr-4 pl-2 md:py-8 content-center">
+                    <h2
+                        class="font-fraunces m-0 md:text-5xl text-4xl font-bold mb-2 text-white md:py-6"
+                    >
+                        We're dedicated to making Vancouver strong and resilient
+                    </h2>
+                    <p class="md:py-6 py-3 md:text-lg text-sm font-atkinson">
+                        Welcome to Strong Towns Vancouver. Here, you'll find
+                        thought-provoking articles, information about upcoming
+                        events, and resources to aid in understanding and
+                        implementing our mission. We're glad you're here and
+                        can't wait for you to join us on this journey.
+                    </p>
+                </div>
+                <div class="md:ml-4 mt-4 md:mt-0 md:min-w-96">
+                    <BrevoMiniForm />
+                </div>
             </main>
         </ContentWithBackground>
         <BlogPostPreviewList
             postsLimit={INDEX_PAGE_BLOG_POSTS_LIMIT}
             maxTitleLength={MAX_TITLE_LENGTH}
         />
+
         <Footer />
+        <BrevoScripts />
     </body>
 </html>

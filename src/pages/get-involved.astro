@@ -4,6 +4,9 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 import PageTitle from '../components/PageTitle.astro'
+import BrevoSubscribeStyles from '../components/BrevoSubscribeStyles.astro'
+import BrevoScripts from '../components/BrevoScripts.astro'
+import BrevoSubscribeForm from '../components/BrevoSubscribeForm.astro'
 
 const PAGE_TITLE = `Get Involved - ${SITE_TITLE}`
 ---
@@ -11,11 +14,12 @@ const PAGE_TITLE = `Get Involved - ${SITE_TITLE}`
 <html lang="en">
     <head>
         <BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
+        <BrevoSubscribeStyles />
     </head>
     <body>
         <Header />
         <PageTitle title="Get Involved" image="/bus-on-41st.jpg" />
-        <main class="max-w-5xl">
+        <main class="font-atkinson max-w-5xl">
             <section>
                 <p>
                     This is only the start! Our ambitious community encompasses
@@ -39,12 +43,13 @@ const PAGE_TITLE = `Get Involved - ${SITE_TITLE}`
                 </p>
             </section>
             <section>
-                <h4 class="font-synthese text-2xl mb-2">Events</h4>
+                <h4 class="font-synthese text-2xl mb-2">Connect with us</h4>
+                <BrevoSubscribeForm />
                 <iframe
                     src="https://embed.styledcalendar.com/#itqSaKdVwkGqwxlBNgyB"
                     title="Styled Calendar"
                     class="styled-calendar-container"
-                    style="width: 100%; border: none;"
+                    style="width: 100%; border: 1px solid; margin: 0;"
                     data-cy="calendar-embed-iframe"></iframe>
                 <script
                     async
@@ -54,5 +59,6 @@ const PAGE_TITLE = `Get Involved - ${SITE_TITLE}`
             </section>
         </main>
         <Footer />
+        <BrevoScripts />
     </body>
 </html>
