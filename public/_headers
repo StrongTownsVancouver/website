@@ -1,2 +1,2 @@
 /*
-    Access-Control-Allow-Origin: https://www.google.com
+    Access-Control-Allow-Origin: *
