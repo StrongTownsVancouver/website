@@ -23,23 +23,22 @@ const PAGE_TITLE = `${SITE_TITLE}`
     <body>
         <Header />
         <ContentWithBackground background="/bus-9.jpg">
-            <main class="pt-12 max-w-6xl flex flex-row">
-                <div class="mr-4 py-8 content-center">
+            <main class="md:pt-12 max-w-7xl flex md:flex-row flex-col">
+                <div class="mr-4 pl-2 md:py-8 content-center">
                     <h2
-                        class="font-fraunces m-0 text-3xl font-bold mb-2 text-white py-6"
+                        class="font-fraunces m-0 md:text-5xl text-4xl font-bold mb-2 text-white md:py-6"
                     >
-                        Welcome to Strong Towns Vancouver. We're dedicated to
-                        making Vancouver strong and resilient.
+                        We're dedicated to making Vancouver strong and resilient
                     </h2>
-                    <p class="py-6 text-base">
-                        Here, you'll find thought-provoking articles,
-                        information about upcoming events, and resources to aid
-                        in understanding and implementing our mission. We're
-                        glad you're here and can't wait for you to join us on
-                        this journey.
+                    <p class="md:py-6 py-3 md:text-lg text-sm">
+                        Welcome to Strong Towns Vancouver. Here, you'll find
+                        thought-provoking articles, information about upcoming
+                        events, and resources to aid in understanding and
+                        implementing our mission. We're glad you're here and
+                        can't wait for you to join us on this journey.
                     </p>
                 </div>
-                <div class="ml-4 min-w-96">
+                <div class="md:ml-4 mt-4 md:mt-0 md:min-w-96">
                     <BrevoMiniForm />
                 </div>
             </main>
