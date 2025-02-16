@@ -22,31 +22,105 @@ const PAGE_TITLE = `${SITE_TITLE}`
     </head>
     <body>
         <Header />
-        <ContentWithBackground background="/bus-9.jpg">
-            <main class="md:pt-12 max-w-7xl flex md:flex-row flex-col">
-                <div class="mr-4 pl-2 md:py-8 content-center">
-                    <h2
-                        class="font-fraunces m-0 md:text-5xl text-4xl font-bold mb-2 text-white md:py-6"
+        <main>
+            <ContentWithBackground background="/bus-9.jpg">
+                <section
+                    class="m-auto max-w-7xl flex px-8 py-5 flex-col md:flex-row xl:px-0"
+                >
+                    <div class="mr-4 content-center">
+                        <h2
+                            class="font-fraunces m-0 text-4xl font-bold mb-2 text-white md:text-5xl md:py-6"
+                        >
+                            We're dedicated to making Vancouver strong and
+                            resilient
+                        </h2>
+                        <p
+                            class="text-sm font-atkinson py-3 md:py-6 md:text-lg"
+                        >
+                            Welcome to Strong Towns Vancouver. Here, you'll find
+                            thought-provoking articles, information about
+                            upcoming events, and resources to aid in
+                            understanding and implementing our mission. We're
+                            glad you're here and can't wait for you to join us
+                            on this journey.
+                        </p>
+                    </div>
+                    <div class="md:ml-4 mt-4 md:mt-0 md:min-w-96">
+                        <BrevoMiniForm />
+                    </div>
+                </section>
+            </ContentWithBackground>
+            <BlogPostPreviewList
+                postsLimit={INDEX_PAGE_BLOG_POSTS_LIMIT}
+                maxTitleLength={MAX_TITLE_LENGTH}
+            />
+            <ContentWithBackground background="/bus-on-41st.jpg">
+                <section
+                    class="m-auto max-w-7xl py-12 px-8 md:flex md:flex-col md:items-center md:mx-auto xl:px-0"
+                >
+                    <div
+                        class="max-w-7xl text-white grid grid-cols-1 md:grid-cols-4"
                     >
-                        We're dedicated to making Vancouver strong and resilient
-                    </h2>
-                    <p class="md:py-6 py-3 md:text-lg text-sm font-atkinson">
-                        Welcome to Strong Towns Vancouver. Here, you'll find
-                        thought-provoking articles, information about upcoming
-                        events, and resources to aid in understanding and
-                        implementing our mission. We're glad you're here and
-                        can't wait for you to join us on this journey.
-                    </p>
-                </div>
-                <div class="md:ml-4 mt-4 md:mt-0 md:min-w-96">
-                    <BrevoMiniForm />
-                </div>
-            </main>
-        </ContentWithBackground>
-        <BlogPostPreviewList
-            postsLimit={INDEX_PAGE_BLOG_POSTS_LIMIT}
-            maxTitleLength={MAX_TITLE_LENGTH}
-        />
+                        <h2 class="font-fraunces m-0 text-4xl md:mx-8 mb-6">
+                            About us
+                        </h2>
+                        <div
+                            class="m-auto text-sm md:mx-0 md:col-start-3 md:col-span-2 md:text-base"
+                        >
+                            <p class="mb-4">
+                                Strong Towns is a global movement that has set
+                                its sights on transforming the way we envision
+                                and build our communities. The movement is
+                                rooted in a deep-seated passion for urban
+                                development and public policy, with a mission to
+                                foster sustainability, resilience, and vibrancy
+                                in communities across the globe. We exist to
+                                challenge conventional thinking, pushing
+                                boundaries and provoking fresh perspectives on
+                                urban development. Our goal is not just to
+                                inspire a new generation of urbanists, but to
+                                empower them to take action and drive change in
+                                their own communities.
+                            </p>
+                            <p class="mb-4">
+                                Established in late 2023, Strong Towns Vancouver
+                                is a piece of this dynamic global movement. We
+                                are more than just a local chapter – we are a
+                                local conversation! A collective of individuals
+                                from all sorts of personal and professional
+                                backgrounds dedicated to fostering a stronger
+                                and more resilient Vancouver. Our focus is on
+                                promoting models of development that will
+                                sustain and strengthen our city in the long
+                                term.
+                            </p>
+                            <p class="mb-4">
+                                We understand that building a stronger city goes
+                                beyond the physical infrastructure. It means
+                                cultivating a culture of thought-provoking
+                                conversations and engaging events that bring
+                                people together. It means providing valuable
+                                resources to help our community understand and
+                                implement our mission. But most importantly, it
+                                means driving action, no matter how small.
+                            </p>
+                            <p class="mb-4">
+                                We believe that each one of us has a role to
+                                play in making Vancouver stronger and more
+                                vibrant. Whether it's participating in a local
+                                event, contributing to a discussion, or simply
+                                spreading the word about our mission, every
+                                action counts. We invite you to join us on this
+                                transformative journey. Embrace the opportunity
+                                to be a part of a global change. Let's work to
+                                create a stronger, more resilient Vancouver,
+                                together!
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </ContentWithBackground>
+        </main>
 
         <Footer />
         <BrevoScripts />

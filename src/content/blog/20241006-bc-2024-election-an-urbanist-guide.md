@@ -5,14 +5,16 @@ heroImage: /blog-assets/20241006-bc-2024-election-an-urbanist-guide/title-vote.p
 author: Strong Towns Vancouver
 ---
 
-> **Register to vote right now at <u>[eregister.electionsbc.gov.bc.ca](https://eregister.electionsbc.gov.bc.ca)</u>. It takes under 5 minutes! If you are a Canadian citizen living in BC over the age of 18, your vote could determine if rent can finally be affordable, or if buses disappear from Vancouver.**<br/>
-> **Don’t wait, register to vote!**
+<div class="banner">
+<b>Register to vote right now at <a href="https://eregister.electionsbc.gov.bc.ca">eregister.electionsbc.gov.bc.ca</a>.</b> It takes under 5 minutes! If you are a Canadian citizen living in BC over the age of 18, your vote could determine if rent can finally be affordable, or if buses disappear from Vancouver. <b>Don’t wait, register to vote!</b>
+</div>
 
+</br>
 </br>
 
 ## Introduction
 
-<center><img src="/blog-assets/20241006-bc-2024-election-an-urbanist-guide/guide.png" alt="How do BC’s three main parties compare on urbanist priorities?"></center>
+<center><img class="max-w-3xl" src="/blog-assets/20241006-bc-2024-election-an-urbanist-guide/guide.png" alt="How do BC’s three main parties compare on urbanist priorities?"></center>
 <center>How do BC’s three main parties compare on urbanist priorities?</center><br/>
 
 British Columbia is holding an election on October 19th to decide the next Premier of the province. The party that wins will influence how much housing costs, whether traffic is clogging the city, and if our cities can thrive.
@@ -28,6 +30,9 @@ Each of BC’s three main parties, the BC Conservatives, BC Greens, and BC NDP h
 
 This election will be extremely close. Your vote matters. If you care about your city, use it wisely.
 
+<br/>
+<br/>
+
 ## Housing
 
 ### BC Conservatives
@@ -40,6 +45,8 @@ Another action they plan to take is to eliminate [B.C.’s Energy Step Code](htt
 
 Overall, their housing policy is a mixed bag. They offer an assortment of policies which have the potential to be effective, but undermine their plan by removing existing law which has been proven to work.
 
+<br/>
+
 ### BC Greens
 
 The Greens’ focus is on financial assistance for renters, with policies including raising the income cap on the [rental assistance program](https://www.timescolonist.com/local-news/bc-greens-call-for-expanded-eligibility-for-existing-rental-support-programs-8220029) and building dedicated affordable housing. In some situations, targeted subsidies can make sense. When done well, they can create relief for those who need it most, while remaining small enough that they do not [cause overall prices to rise](https://www.strongtowns.org/journal/2024/5/28/how-affordable-housing-distracts-people-from-housing-affordability) too much. On the other hand, their policy to [cap rent increases between tenants](https://cheknews.ca/unsustainable-bc-greens-propose-capping-rent-prices-between-tenants-1189757/) could have unintended consequences. The housing market is fundamentally governed by the law of supply and demand, and [developers are highly cost sensitive](https://www.mdpi.com/1911-8074/16/10/446). Artificially restricting the price of rent could result in fewer houses being built, creating almost no vacancies, and a market which continues to fail British Columbians.
@@ -50,6 +57,8 @@ The Greens have also taken a unique position on housing by specifically criticis
 
 The Greens earn major points for their plan to stop companies getting rich off of unaffordable housing, and have adequate commitments to building more homes. However, they lose points for their ineffective market controls and subsidies.
 
+<br/>
+
 ### BC NDP
 
 The NDP have been trailblazers in housing policy, with other governments [copying their successful policies](https://vancouversun.com/news/local-news/housing-federal-budget-steal-page-bc-david-eby). First among these was [upzoning much of the province](https://www.beautifulnanaimo.ca/bc-eliminates-sf-zoning) to remove restrictions on building types. This is a huge and transformative step. Zoning is exclusionary, [racist in origin](https://viewpointvancouver.ca/2021/08/03/is-single-family-zoning-racist-and-does-it-matter/), and creates unnecessary burdens for developers. Policies like this have already [helped to reduce the cost of rent](https://vancouversun.com/business/real-estate/bc-airbnb-short-term-rental-restrictions-bring-down-rents-report) in BC, and we are only just beginning to see the effects.
@@ -57,6 +66,9 @@ The NDP have been trailblazers in housing policy, with other governments [copyin
 This election, their [headline promise](https://www.todayinbc.com/home2/ndp-announces-housing-plan-that-would-cover-40-of-price-of-new-home-7556113) is to offer a loan to first-time homebuyers of up to 40% of the price of a new home. This policy is targeted at home-buyers with income below a (still unspecified) cap. Whether this is a small enough target to avoid [causing the price of houses to jump](https://www.strongtowns.org/journal/2024/5/28/how-affordable-housing-distracts-people-from-housing-affordability) up remains to be seen. Structuring this program as a loan is smart, as the long-term budgetary impact will be minimal, or even positive, making this a sustainable program. Combined with a commitment to continue working with nonprofits to build small-scale housing in all neighbourhoods, the NDP offers strong housing policy.
 
 As strong as the NDP’s policies are, there is still room for improvement. We would love to see them implement the Conservatives’ proposal to [require grocery stores and local businesses near transit](https://www.conservativebc.ca/_get_bc_building_john_rustad_unveils_bold_plan). We are also hoping they will go further in relaxing their zoning laws, and allow more flexibility to allow businesses to operate in residential areas. Creating complete neighbourhoods with home-based businesses, local corner stores, and cafés, as well as ample housing, would [allow the city to truly flourish](https://www.strongtowns.org/journal/2024/4/25/loosen-up-how-mixed-use-zoning-laws-make-communities-strong).
+
+<br/>
+<br/>
 
 ## Transportation
 
@@ -70,6 +82,8 @@ More optimistically, the Conservatives are promising to extend the SkyTrain to N
 
 The Conservatives say they are committed to transit, but do not have the policies in place to make sure the buses keep running.
 
+<br/>
+
 ### BC Green Party
 
 The BC Green Party has [made an ambitious promise](https://www.surreynowleader.com/news/bc-greens-free-transit-pledge-opens-fresh-debate-on-the-road-to-the-election-7531078) to provide fully-funded transit — that is, free transit. This would be a dramatic shift in how we use transit, which would encourage more people to use the service more frequently. This would be fantastic for making the city more accessible to all, as long as capacity keeps up with demand, at least. Fortunately, they also promised to provide additional funding for more buses in areas serviced by BC Transit and immediate funding to maintain Translink’s operations in Metro Vancouver.
@@ -77,6 +91,8 @@ The BC Green Party has [made an ambitious promise](https://www.surreynowleader.c
 A fully-funded transit system would require us to reimagine transit the same way we imagine roads: an essential public service which is free for all of us to use. However, the Greens do not have a defined plan for how they would fund and implement a free transit system.
 
 The Greens undoubtedly have the strongest position on transit, but their plans are also the hardest to achieve.
+
+<br/>
 
 ### BC NDP
 
@@ -87,6 +103,9 @@ On the other hand, the government recently announced $2.65 billion dollars to ex
 To be fair to the NDP, this is not a typical highway expansion. One lane will be entirely dedicated to becoming a bus lane. Unlike cars, buses can reduce traffic by removing between 50 and 100 cars from the road per bus, and they also don’t require any parking spaces once they reach their destination. Even better than buses, the NDP are promising to connect the province by rail, including links between Metro Vancouver, Squamish, Whistler, and Pemberton. Anyone who has been stuck on the Sea-to-Sky Highway watching their map turn solid red will know how sorely needed these rail links are.
 
 The NDP deserve praise for their achievements improving public transit so far, and have presented an inspiring vision of a province connected by rail. Their record is tarnished only by the money they are wasting on highway expansion.
+
+<br/>
+<br/>
 
 ## Safe and Productive Streets
 
@@ -100,13 +119,20 @@ Looking at road safety, we could not find any plans from the Conservatives to su
 
 The Conservatives have laudable commitments to strengthening mixed-use development, but undermine this promise through costly and destructive sprawl.
 
+<br/>
+
 ### BC Greens
 
 The BC Greens have long standing commitments to [supporting mixed-use development](https://www.bcgreens.ca/fund_thoughtful_community_planning) and walkable neighbourhoods. They have also promised to expand cycling infrastructure and e-bike access. Unfortunately, we could not find any specific policies on their platform.
 
+<br/>
+
 ### BC NDP
 
 The NDP have [already passed laws](https://www.bcndp.ca/latest/10-ways-were-making-it-easier-you-get-around-bc) to support transit-oriented development, and offered rebates on e-bikes. Going forward, they are [offering $10 million in funding](https://www2.gov.bc.ca/gov/content/housing-tenancy/local-governments-and-housing/policy-and-planning-tools-for-housing/complete-communities) for complete communities through Clean BC. In addition, they are committing to crack down on speeding, which will save lives and help address the [deadly epidemic of road violence](https://globalnews.ca/news/10683801/bc-fatal-crashes-july/).
+
+<br/>
+<br/>
 
 ## Local Governance
 
@@ -116,14 +142,20 @@ The Conservatives are [promising to remove](https://globalnews.ca/news/10779404/
 
 Overall, the Conservatives would move in the direction of stronger local governance.
 
+<br/>
+
 ### BC Greens
 
 The Greens are looking to diversify revenue sources for cities by giving them grants and sharing the revenue from carbon pricing. This could help to change the incentives, and accelerate housing affordability. In BC, most cities receive almost all of their revenue from property taxes. This gives the city a strong incentive to allow property taxes to increase every year. Conversely, if house prices were to fall, it could cause a funding crisis for cities. By giving cities diversified revenue streams, they would allow mayors to have the financial freedom to end the housing crisis.
 
 City financing is an overlooked but important topic, and the Greens are the only party working to address this problem.
 
+<br/>
+
 ### BC NDP
 
 Vancouver has been at the forefront of the housing crisis for a long time. Ideally, the mayor would be able to step in and address this issue with a local-first approach. Unfortunately, successive mayors have failed to take action, and the issue of housing affordability has become truly province-wide. With this in mind, the BC NDP overruled municipalities on zoning, and took the bold action needed to tackle the housing crisis.
 
 While we support the NDP's housing policy for many reasons, we do have to flag the erosion of local governance that this has caused.
+
+<br/>

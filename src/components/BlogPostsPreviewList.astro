@@ -24,13 +24,16 @@ const posts = (await getCollection('blog'))
             Vancouver!
         </p>
     </div>
-    <ul class="md:flex md:justify-center m-8 max-w-5xl">
+    <ul class="m-8 max-w-5xl md:grid-cols-4 md:inline-grid">
         {
             posts.map((post) => (
                 <li class="mx-2">
-                    <a href={`/blog/${post.slug}/`}>
+                    <a
+                        class="flex flex-col justify-center"
+                        href={`/blog/${post.slug}/`}
+                    >
                         <img
-                            class="object-cover w-[300px] h-[200px] max-w-[300px] max-h-[200px]"
+                            class="object-cover min-w-[240px] min-h-[160px] max-w-[240px] max-h-[160px] rounded-md"
                             src={post.data.heroImage}
                             alt={post.data.title}
                         />
@@ -39,7 +42,7 @@ const posts = (await getCollection('blog'))
                                 ? `${post.data.title.slice(0, maxTitleLength)}...`
                                 : post.data.title}
                         </h3>
-                        <p class="font-synthese text-sm py-1 text-black">
+                        <p class="font-synthese text-sm pb-8 md:pb-1 text-black">
                             <FormattedDate date={post.data.pubDate} />
                             {' by '}
                             {post.data.author}
