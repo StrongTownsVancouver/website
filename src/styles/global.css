@@ -67,11 +67,4 @@ body {
     @apply text-lg leading-7;
 }
 
-/* TODO: move to specific img tags */
-/* img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-} */
-
 .grecaptcha-badge { visibility: hidden; }
