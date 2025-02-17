@@ -21,13 +21,20 @@ const PAGE_TITLE = `${SITE_TITLE}`
         <BrevoSubscribeStyles />
     </head>
     <body>
-        <Header />
         <main>
             <ContentWithBackground background="/bus-9.jpg">
                 <section
-                    class="m-auto max-w-7xl flex px-8 py-5 flex-col md:flex-row xl:px-0"
+                    class="m-auto max-w-7xl flex px-8 py-5 flex-col md:pt-14 md:flex-row xl:px-0"
                 >
                     <div class="mr-4 content-center">
+                        <div class="mb-4">
+                            <img
+                                src={'/logo/strong-towns-vancouver-512.png'}
+                                alt={SITE_TITLE}
+                                width={150}
+                            />
+                        </div>
+
                         <h2
                             class="font-fraunces m-0 text-4xl font-bold mb-2 text-white md:text-5xl md:py-6"
                         >
@@ -65,7 +72,7 @@ const PAGE_TITLE = `${SITE_TITLE}`
                             About us
                         </h2>
                         <div
-                            class="m-auto text-sm md:mx-0 md:col-start-3 md:col-span-2 md:text-base"
+                            class="m-auto text-sm md:mx-0 md:col-start-2 md:col-span-3 md:text-base"
                         >
                             <p class="mb-4">
                                 Strong Towns is a global movement that has set
@@ -120,6 +127,48 @@ const PAGE_TITLE = `${SITE_TITLE}`
                     </div>
                 </section>
             </ContentWithBackground>
+            <section
+                class="m-auto max-w-7xl py-12 px-8 md:flex md:flex-col md:items-center md:mx-auto xl:px-0"
+            >
+                <div
+                    class="max-w-7xl text-black grid grid-cols-1 md:grid-cols-4"
+                >
+                    <h2
+                        class="font-fraunces m-0 text-4xl md:mx-8 mb-6 md:col-start-1 md:col-span-1"
+                    >
+                        Get involved
+                    </h2>
+                    <div
+                        class="m-auto text-sm md:mx-0 md:text-base md:col-start-2 md:col-span-3"
+                    >
+                        <p class="mb-4">
+                            This is only the start! Our ambitious community
+                            encompasses individuals of all ages, professions,
+                            and backgrounds, united by our passion for
+                            walkability, accessibility, housing, and transit.
+                            Prepare yourself for engaging and fun community
+                            advocacy opportunities to help enhance Vancouver for
+                            everyone. Your voice, ideas, and skills enrich our
+                            community as we implement our shared vision. Let's
+                            work together to reshape Vancouver, together!
+                        </p>
+                        <h4 class="font-synthese text-2xl mb-2">
+                            Check out our event calendar
+                        </h4>
+                        <iframe
+                            src="https://embed.styledcalendar.com/#itqSaKdVwkGqwxlBNgyB"
+                            title="Styled Calendar"
+                            class="styled-calendar-container"
+                            style="width: 100%; border: 1px solid; margin: 0;"
+                            data-cy="calendar-embed-iframe"></iframe>
+                        <script
+                            async
+                            type="module"
+                            src="https://embed.styledcalendar.com/assets/parent-window.js"
+                        ></script>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <Footer />

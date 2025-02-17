@@ -15,50 +15,8 @@ const PAGE_TITLE = `Get Involved - ${SITE_TITLE}`
     <head>
         <BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
         <BrevoSubscribeStyles />
+        <script>
+            document.location.href = '/'
+        </script>
     </head>
-    <body>
-        <Header />
-        <PageTitle title="Get Involved" image="/bus-on-41st.jpg" />
-        <main class="font-atkinson max-w-5xl">
-            <section>
-                <p>
-                    This is only the start! Our ambitious community encompasses
-                    individuals of all ages, professions, and backgrounds,
-                    united by our passion for walkability, accessibility,
-                    housing, and transit. Prepare yourself for engaging and fun
-                    community advocacy opportunities to help enhance Vancouver
-                    for everyone. Your voice, ideas, and skills enrich our
-                    community as we implement our shared vision. Let's work
-                    together to reshape Vancouver, together!
-                </p>
-                <p>
-                    This is only the beginning! Our ambitious community
-                    encompasses individuals of all ages, professions, and
-                    backgrounds. We’re making it easier to walk and get around,
-                    having affordable places to live, and reliable transit. Get
-                    ready to join fun activities that help make Vancouver better
-                    for everyone. Your thoughts, ideas, and talents make our
-                    community better as we work on our shared dream. Let's work
-                    together to make Vancouver even better!
-                </p>
-            </section>
-            <section>
-                <h4 class="font-synthese text-2xl mb-2">Connect with us</h4>
-                <BrevoSubscribeForm />
-                <iframe
-                    src="https://embed.styledcalendar.com/#itqSaKdVwkGqwxlBNgyB"
-                    title="Styled Calendar"
-                    class="styled-calendar-container"
-                    style="width: 100%; border: 1px solid; margin: 0;"
-                    data-cy="calendar-embed-iframe"></iframe>
-                <script
-                    async
-                    type="module"
-                    src="https://embed.styledcalendar.com/assets/parent-window.js"
-                ></script>
-            </section>
-        </main>
-        <Footer />
-        <BrevoScripts />
-    </body>
 </html>

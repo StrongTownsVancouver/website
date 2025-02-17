@@ -1,18 +1,19 @@
 ---
 interface Props {
+    styleClass?: string
     background: string
 }
 
-const { background } = Astro.props
+const { background, styleClass } = Astro.props
 ---
 
 <div
-    class="mx-auto h-full overflow-y-scroll bg-cover bg-scroll md:bg-center bg-bottom bg-no-repeat shadow-lg"
+    class=`mx-auto h-full overflow-y-scroll bg-cover bg-scroll md:bg-center bg-bottom bg-no-repeat shadow-lg ${styleClass}`
     style={`background-image: url('${background}')`}
 >
     <div
-        class="w-full h-full text-white"
-        style="background-color: rgba(0, 0, 0, 0.7)"
+        class=`w-full h-full text-white`
+        style="background-color: rgba(0, 0, 0, 0.8)"
     >
         <slot />
     </div>
