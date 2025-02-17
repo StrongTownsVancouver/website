@@ -17,7 +17,7 @@ author: Strong Towns Vancouver
 </br>
 
 Cities around the world have successfully transformed their historic districts into vibrant pedestrian zones, creating thriving community spaces that benefit everyone. Here in Vancouver, the successful Water Street pilot program in 2024 demonstrated clear benefits: increased foot traffic, improved business performance, and a more welcoming environment for families and seniors. The data speaks for itself - a permanent pedestrian zone would enhance our city's livability while supporting local economic growth.
-
+<br/>
 Council has directed staff to bring back the pedestrian zone with an unexpected twist. The planned weekend-only closures require weekly setup and removal of barriers and furniture, creating confusion for visitors and residents alike and an unnecessary expense for taxpayers. This comes as a shock as the pilot program showed the benefits were observed most during weekdays, proving that this walkable community space had consistent demand throughout the week!
 
 </br>

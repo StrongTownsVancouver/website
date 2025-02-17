@@ -13,8 +13,10 @@ Now, let's not romanticise the past. Women had only recently won the right to vo
 
 Before the 1930s there was [very little regulation](https://doodles.mountainmath.ca/posts/2023-02-06-a-brief-history-of-vancouver-planning-development-regimes/index.html) on where and how structures could be built, allowing nearly anyone with a dollar and two hands to build a shack on the edge of town. As their savings built up, they could slowly improve their home from a leaky shed, add a shingle roof, then one brick wall at a time, until it became a sturdy house. Vancouver was notable for having many apartments above retail stores, which allowed housing to also be a source of income. This enabled hard-working immigrants to start from very little, and build up enough savings to support their children moving into the center of town. When those children got there, they found many housing options at a variety of price points, including low-quality tenements, middle-class duplexes, high-end single-family homes, and world-class skyscrapers. This organic growth allowed Vancouver to [grow explosively](https://vancouversun.com/news/local-news/this-week-in-history-1931-vancouver-becomes-canadas-third-largest-city), from fewer than 30,000 in 1901 to 246,000 in 1931, while maintaining housing affordability, plentiful neighbourhood grocers and cafes, and a lively dance scene.
 
+<br/>
 <center><img src="/blog-assets/20240518-who-set-the-housing-trap/1.png" alt="Houses over storefronts at Denman and Comox, 1928"></center><br/>
 <center><img src="/blog-assets/20240518-who-set-the-housing-trap/2.jpg" alt="Houses over storefronts at Denman and Comox, 2024"></center>
+<br/>
 
 <center>Houses over storefronts at Denman and Comox, 1928 and 2024 <br/>Google Maps and <a href="https://searcharchives.vancouver.ca/stores-on-denman-street">City of Vancouver Archives</a></center><br/>
 
@@ -32,11 +34,13 @@ Unfortunately, between 1919 and 1928 his drive to improve public safety had take
 
 This problematic ideology continued to develop in Vancouver. In the Plan, [he stated](https://archive.org/details/vancplanincgen00vanc/page/26/) "[t]he retention of Vancouver as a city of single family homes has always been close to the heart of those engaged in the preparation of this plan". As a result, the Vancouver he laid out was suburban and exclusionary. Wealthy White residents prospered, while the working class, immigrants, and Indigenous people suffered.
 
+<br/>
 <center><img src="/blog-assets/20240518-who-set-the-housing-trap/3.jpg" alt="A map found in A Plan for the City of Vancouver showing the distribution of zoning in 1927"></center>
 <center>A map found in <i>A Plan for the City of Vancouver</i> showing the distribution of zoning in 1927</center><br/>
 
 The Plan had another effect too. Before zoning, residents were able to improve a neighbourhood themselves. They could choose to create a house or an apartment, whether to rent or to own, and if they wanted to visit the neighbourhood grocer a few blocks away, or to drive to the commercial district. As the book [Escaping the Housing Trap](https://www.housingtrap.org/) explains, people had a real stake in their community. Not only were they residents, but also as business owners with the ability to adapt to changing needs at a micro scale. Under zoning, this agency was taken away. The only opinions that mattered were those of city officials. By the 1960s, Vancouver's population had diverged from the models created by Bartholomew, but they were still living in large part under the decisions he had made. Even today, Vancouver's housing mix [closely resembles](https://samsullivan.ca/taking-a-closer-look-at-the-legacy-of-harland-bartholomew-and-his-plan-for-vancouver-2/) the zoning laid out in 1928.
 
+<br/>
 <center><img src="/blog-assets/20240518-who-set-the-housing-trap/4.png" alt="Vancouver zoning from 1931 to 2020, courtesy of UBC Sociology"></center>
 <center>Vancouver zoning from 1931 to 2020, courtesy of <a href="https://zoning.sociology.ubc.ca/historical/">UBC Sociology</a></center><br/>
 
@@ -45,3 +49,5 @@ Imagine the immigrant family from earlier, now arriving in the 1950s. They are n
 The Plan [failed](https://bcbooklook.com/harland-bartholomew-and-vancouver-urban-history-1928-to-1952-video/) almost immediately. If you know your history, you will have realized that it was published just a year before the Great Depression began. Wealthy Shaughnessy, which had already begun implementing zoning laws criminalizing rentals, became known as Poverty Hill. Homeowners found that they had just banned themselves from renting out any part of their house to cover for their financial losses, and many defaulted on their mortgage. Eventually, pressure grew and residents broke the new zoning law to convert their mansions into illegal rooming houses. After the depression ended, rather than learn any lessons from this experience, they returned to the Plan.
 
 What lessons can we learn from Bartholomew? We know that the plan has continued to fail Vancouver, as housing prices have reached crisis levels and zoning has incapacitated developers from supplying enough to meet demand. We know that zoning laws are still used by the wealthy to protect housing prices and exclude working-class Canadians from neighbourhoods across the city, just as Bartholomew intended when he introduced the practice a century ago. Zoning is not everything, but the history of Vancouver teaches us that loosening the vice grip that zoning has on the city would go a long way towards letting the city adapt and respond to change again, and help us find our way out of the housing trap.
+
+<br/>
