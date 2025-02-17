@@ -17,12 +17,12 @@ const posts = (await getCollection('blog'))
 <section
     class="m-auto max-w-7xl py-12 px-8 md:flex md:flex-col md:items-center md:mx-auto xl:px-0"
 >
-    <div class="max-w-7xl text-black grid grid-cols-1 md:grid-cols-4">
-        <div class="md:col-start-1 md:col-span-1">
-            <h2 class="font-fraunces m-0 text-4xl">Our articles</h2>
-        </div>
+    <div class="w-full max-w-7xl text-st-black grid grid-cols-1 md:grid-cols-4">
+        <h2 class="font-fraunces m-0 text-4xl md:mx-8 mb-6">Our articles</h2>
         <div class="md:col-start-2 md:col-span-3">
-            <ul class="m-8 mb-4 max-w-5xl md:grid-cols-2 md:inline-grid">
+            <ul
+                class="m-4 mb-4 max-w-5xl md:grid-cols-2 md:inline-grid md:w-full"
+            >
                 {
                     posts.map((post) => (
                         <li class="mx-2 py-2">
@@ -31,16 +31,16 @@ const posts = (await getCollection('blog'))
                                 href={`/blog/${post.slug}/`}
                             >
                                 <img
-                                    class="object-cover min-w-[350px] min-h-[225px] max-w-[350px] max-h-[225px] rounded-md"
+                                    class="object-cover rounded-md min-w-[300px] min-h-[200px] max-w-[300px] max-h-[200px] md:min-w-[400px] md:min-h-[250px] md:max-w-[400px] md:max-h-[250px] "
                                     src={post.data.heroImage}
                                     alt={post.data.title}
                                 />
-                                <h3 class="font-synthese text-base mb-1 text-black pt-3 my-0">
+                                <h3 class="font-synthese text-base mb-1 text-st-black pt-3 my-0">
                                     {post.data.title.length > maxTitleLength
                                         ? `${post.data.title.slice(0, maxTitleLength)}...`
                                         : post.data.title}
                                 </h3>
-                                <p class="font-synthese text-xs pb-8 md:pb-1 text-black">
+                                <p class="font-synthese text-xs pb-8 md:pb-1 text-st-black">
                                     <FormattedDate date={post.data.pubDate} />
                                     {' by '}
                                     {post.data.author}
