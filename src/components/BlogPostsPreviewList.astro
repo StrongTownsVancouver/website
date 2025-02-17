@@ -14,45 +14,46 @@ const posts = (await getCollection('blog'))
     .slice(0, postsLimit)
 ---
 
-<section class="md:flex md:flex-col md:items-center md:mx-auto pt-8">
-    <div class="max-w-7xl">
-        <h2 class="font-fraunces m-0 text-4xl mx-8">
-            Check out our recent posts
-        </h2>
-        <p class="font-atkinson mx-8 mt-4">
-            Keep up with our local actions, news, and events for a resilient
-            Vancouver!
-        </p>
-    </div>
-    <ul class="m-8 mb-4 max-w-5xl md:grid-cols-4 md:inline-grid">
-        {
-            posts.map((post) => (
-                <li class="mx-2">
-                    <a
-                        class="flex flex-col justify-center"
-                        href={`/blog/${post.slug}/`}
-                    >
-                        <img
-                            class="object-cover min-w-[240px] min-h-[160px] max-w-[240px] max-h-[160px] rounded-md"
-                            src={post.data.heroImage}
-                            alt={post.data.title}
-                        />
-                        <h3 class="font-synthese mb-2 text-black pt-3 my-0">
-                            {post.data.title.length > maxTitleLength
-                                ? `${post.data.title.slice(0, maxTitleLength)}...`
-                                : post.data.title}
-                        </h3>
-                        <p class="font-synthese text-sm pb-8 md:pb-1 text-black">
-                            <FormattedDate date={post.data.pubDate} />
-                            {' by '}
-                            {post.data.author}
-                        </p>
-                    </a>
-                </li>
-            ))
-        }
-    </ul>
-    <div class="px-5 w-full max-w-5xl mb-6 text-right md:px-0">
-        <a class="font-bold" href="/blog">See more posts →</a>
+<section
+    class="m-auto max-w-7xl py-12 px-8 md:flex md:flex-col md:items-center md:mx-auto xl:px-0"
+>
+    <div class="max-w-7xl text-black grid grid-cols-1 md:grid-cols-4">
+        <div class="md:col-start-1 md:col-span-1">
+            <h2 class="font-fraunces m-0 text-4xl">Our articles</h2>
+        </div>
+        <div class="md:col-start-2 md:col-span-3">
+            <ul class="m-8 mb-4 max-w-5xl md:grid-cols-2 md:inline-grid">
+                {
+                    posts.map((post) => (
+                        <li class="mx-2 py-2">
+                            <a
+                                class="flex flex-col items-center"
+                                href={`/blog/${post.slug}/`}
+                            >
+                                <img
+                                    class="object-cover min-w-[350px] min-h-[225px] max-w-[350px] max-h-[225px] rounded-md"
+                                    src={post.data.heroImage}
+                                    alt={post.data.title}
+                                />
+                                <h3 class="font-synthese text-base mb-1 text-black pt-3 my-0">
+                                    {post.data.title.length > maxTitleLength
+                                        ? `${post.data.title.slice(0, maxTitleLength)}...`
+                                        : post.data.title}
+                                </h3>
+                                <p class="font-synthese text-xs pb-8 md:pb-1 text-black">
+                                    <FormattedDate date={post.data.pubDate} />
+                                    {' by '}
+                                    {post.data.author}
+                                </p>
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+            <div class="px-5 w-full max-w-5xl mb-2 mt-2 text-right md:px-0">
+                <a class="font-bold text-xl" href="/blog">See more articles →</a
+                >
+            </div>
+        </div>
     </div>
 </section>
