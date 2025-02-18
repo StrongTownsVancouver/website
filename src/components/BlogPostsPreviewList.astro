@@ -18,10 +18,16 @@ const posts = (await getCollection('blog'))
     class="m-auto max-w-7xl py-12 px-8 md:flex md:flex-col md:items-center md:mx-auto xl:px-0"
 >
     <div class="w-full max-w-7xl text-st-black grid grid-cols-1 md:grid-cols-4">
-        <h2 class="font-fraunces m-0 text-4xl md:mx-8 mb-6">Our articles</h2>
+        <h2 class="font-mixta font-bold m-0 text-4xl md:mx-8 mb-6">
+            Our articles
+        </h2>
         <div class="md:col-start-2 md:col-span-3">
+            <span class="font-freight text-lg text-st-black">
+                Keep up with our local actions, news, and events for a resilient
+                Vancouver!
+            </span>
             <ul
-                class="m-4 mb-4 max-w-5xl md:grid-cols-2 md:inline-grid md:w-full"
+                class="m-4 mb-4 max-w-5xl lg:grid-cols-2 lg:inline-grid lg:w-full"
             >
                 {
                     posts.map((post) => (
@@ -29,18 +35,19 @@ const posts = (await getCollection('blog'))
                             <a
                                 class="flex flex-col items-center"
                                 href={`/blog/${post.slug}/`}
+                                aria-label={post.data.title}
                             >
                                 <img
-                                    class="object-cover rounded-md min-w-[300px] min-h-[200px] max-w-[300px] max-h-[200px] md:min-w-[400px] md:min-h-[250px] md:max-w-[400px] md:max-h-[250px] "
+                                    class="object-cover rounded-md w-full h-58 md:h-64 lg:h-72"
                                     src={post.data.heroImage}
                                     alt={post.data.title}
                                 />
-                                <h3 class="font-synthese text-base mb-1 text-st-black pt-3 my-0">
+                                <h3 class="font-synthese font-semibold text-lg mb-1 text-st-black pt-3 my-0">
                                     {post.data.title.length > maxTitleLength
                                         ? `${post.data.title.slice(0, maxTitleLength)}...`
                                         : post.data.title}
                                 </h3>
-                                <p class="font-synthese text-xs pb-8 md:pb-1 text-st-black">
+                                <p class="font-freight text-base pb-8 md:pb-1 text-st-black">
                                     <FormattedDate date={post.data.pubDate} />
                                     {' by '}
                                     {post.data.author}
@@ -51,7 +58,8 @@ const posts = (await getCollection('blog'))
                 }
             </ul>
             <div class="px-5 w-full max-w-5xl mb-2 mt-2 text-right md:px-0">
-                <a class="font-bold text-xl" href="/blog">See more articles →</a
+                <a class="font-synthese font-bold text-xl" href="/blog"
+                    >See more articles →</a
                 >
             </div>
         </div>

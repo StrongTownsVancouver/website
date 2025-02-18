@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-    --font-synthese: 'Synthese Web', sans-serif;
-    --font-atkinson: 'Atkinson', sans-serif;
-    --font-fraunces: 'Fraunces', serif;
+    --font-mixta: mixta-sharp, serif;
+    --font-synthese: synthese, sans-serif;
+    --font-freight: freight-text-pro, serif;
 
     --color-st-black: #0c2440;
     --color-st-yellow: #ffb549;
@@ -15,57 +15,22 @@
     --color-st-callout-text: #0c2340;
 }
 
-@font-face {
-    font-family: 'Atkinson';
-    src: url('/fonts/atkinson-regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
+@layer utilities {
+    .blog-image {
+        @apply max-w-4xl w-full
+    }
 
-@font-face {
-    font-family: 'Atkinson';
-    src: url('/fonts/atkinson-bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Synthese Web';
-    src: url('/fonts/syntheseweb-regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Synthese Web';
-    src: url('/fonts/syntheseweb-bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Fraunces';
-    src: url('/fonts/fraunces-soft-semibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+    .banner {
+        @apply text-lg pl-8 p-5 py-8 bg-st-callout rounded-lg mx-0 m-0 mt-1 md:mx-5;
+    }
 }
 
 body {
-    font-family: 'MixtaSharp', sans-serif;
     margin: 0;
     padding: 0;
-    text-align: left;
     color: var(--color-st-black);
-    background-size: 100% 600px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-
-    @apply text-lg leading-7;
 }
 
-.grecaptcha-badge { visibility: hidden; }
+.grecaptcha-badge {
+    visibility: hidden;
+}

@@ -16,7 +16,7 @@ Strong Towns Vancouver recently organized a walking tour of the Water Street Ped
 The walking tour was a truly unique experience, offering us the chance to witness the significant changes brought about by the absence of cars. The atmosphere was serene, and the area was more breathtaking, marked by cleaner air and quieter streets. This allowed us to appreciate the historic neighbourhood in a new light, a view that had yet to be possible for decades due to car-centric planning. We observed people calmly exploring the neighbourhood and enjoying the street where cars used to dominate. Bikes, mobility scooters, and pedestrians could navigate the car-free sections of the street safely, unhindered by empty parked vehicles or narrow sidewalks. This shift in the use of public space created a vibrant, accessible environment for everyone.
 
 <br/>
-<center><img class="max-w-3xl" src="/blog-assets/20240704-car-free-gastown/1.jpeg" alt="Pedestrian zone signs in Gastown"></center>
+<center><img class="blog-image" src="/blog-assets/20240704-car-free-gastown/1.jpeg" alt="Pedestrian zone signs in Gastown"></center>
 <center>Pedestrian zone signs in Gastown</center><br/>
 
 <br/>
@@ -40,10 +40,9 @@ As one of the oldest parts of the city, Gastown holds substantial historical sig
 The pedestrian zone of Gastown is adorned with historic features and enhancements that enrich the visitor's experience. The charm of the area is accentuated by historic lampposts lined along the street, not only adding to the aesthetic appeal but also serving a functional purpose in maintaining Gastown's historic character. The outdoor seating areas, a direct benefit of the pedestrian zone, provide spots for rest and social interaction. Visitors are also drawn to the famous Gastown Steam Clock, a landmark built in 1977 that has since become an emblem of the area. The neighbourhood is further embellished with various art installations, many created by local artists, adding a unique touch to the streetscape and enriching the pedestrian experience.
 
 <br/>
-<center><img class="max-w-3xl" src="/blog-assets/20240704-car-free-gastown/2.png" alt=""></center>
+<center><img class="blog-image" src="/blog-assets/20240704-car-free-gastown/2.png" alt=""></center>
 <center>Gastown, City of Vancouver</center><br/>
 
-<br/>
 <br/>
 
 ## How Gastown Comes Together

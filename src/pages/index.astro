@@ -10,14 +10,18 @@ import BrevoMiniForm from '../components/BrevoMiniForm.astro'
 import BrevoScripts from '../components/BrevoScripts.astro'
 
 const INDEX_PAGE_BLOG_POSTS_LIMIT = 6
-const MAX_TITLE_LENGTH = 40
+const MAX_TITLE_LENGTH = 45
 const PAGE_TITLE = `${SITE_TITLE}`
 ---
 
 <!doctype html>
 <html lang="en">
     <head>
-        <BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
+        <BaseHead
+            title={PAGE_TITLE}
+            description={SITE_DESCRIPTION}
+            image="logo/stvanlogo_l-blue_d-blue.png"
+        />
         <BrevoSubscribeStyles />
     </head>
     <body>
@@ -35,13 +39,13 @@ const PAGE_TITLE = `${SITE_TITLE}`
                             />
                         </div>
                         <h2
-                            class="font-fraunces m-0 text-4xl font-bold mb-2 text-white md:text-5xl md:py-3"
+                            class="font-mixta font-bold text-4xl m-0 mb-2 text-white md:text-5xl md:py-3"
                         >
                             We're dedicated to making Vancouver strong and
                             resilient
                         </h2>
                         <p
-                            class="text-sm font-atkinson py-3 md:py-6 md:text-lg"
+                            class="font-freight text-base py-3 md:py-6 md:text-lg"
                         >
                             Welcome to Strong Towns Vancouver. Here, you'll find
                             thought-provoking articles, information about
@@ -67,11 +71,13 @@ const PAGE_TITLE = `${SITE_TITLE}`
                     <div
                         class="max-w-7xl text-white grid grid-cols-1 md:grid-cols-4"
                     >
-                        <h2 class="font-fraunces m-0 text-4xl md:mx-8 mb-6">
+                        <h2
+                            class="font-mixta font-bold m-0 text-4xl md:mx-8 mb-6"
+                        >
                             About us
                         </h2>
                         <div
-                            class="m-auto text-sm md:mx-0 md:col-start-2 md:col-span-3 md:text-base"
+                            class="m-auto font-freight text-lg md:mx-0 md:col-start-2 md:col-span-3 md:text-base"
                         >
                             <p class="mb-4">
                                 Strong Towns is a global movement that has set
@@ -133,12 +139,12 @@ const PAGE_TITLE = `${SITE_TITLE}`
                     class="max-w-7xl text-st-black grid grid-cols-1 md:grid-cols-4"
                 >
                     <h2
-                        class="font-fraunces m-0 text-4xl md:mx-8 mb-6 md:col-start-1 md:col-span-1"
+                        class="font-mixta font-bold m-0 text-4xl md:mx-8 mb-6 md:col-start-1 md:col-span-1"
                     >
                         Get involved
                     </h2>
                     <div
-                        class="m-auto text-sm md:mx-0 md:text-base md:col-start-2 md:col-span-3"
+                        class="m-auto font-freight text-lg md:mx-0 md:text-base md:col-start-2 md:col-span-3"
                     >
                         <p class="mb-4">
                             This is only the start! Our ambitious community
@@ -151,7 +157,9 @@ const PAGE_TITLE = `${SITE_TITLE}`
                             community as we implement our shared vision. Let's
                             work together to reshape Vancouver, together!
                         </p>
-                        <h3 class="font-fraunces text-2xl mb-4">Our Events</h3>
+                        <h3 class="font-mixta font-semibold text-2xl mb-4">
+                            Our Events
+                        </h3>
                         <iframe
                             src="https://embed.styledcalendar.com/#itqSaKdVwkGqwxlBNgyB"
                             title="Styled Calendar"

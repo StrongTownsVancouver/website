@@ -1,19 +1,18 @@
 ---
 import BaseHead from '../components/BaseHead.astro'
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
-import PageTitle from '../components/PageTitle.astro'
 import BrevoSubscribeStyles from '../components/BrevoSubscribeStyles.astro'
-import BrevoScripts from '../components/BrevoScripts.astro'
-import BrevoSubscribeForm from '../components/BrevoSubscribeForm.astro'
 
 const PAGE_TITLE = `Get Involved - ${SITE_TITLE}`
 ---
 
 <html lang="en">
     <head>
-        <BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
+        <BaseHead
+            title={PAGE_TITLE}
+            description={SITE_DESCRIPTION}
+            image="logo/stvanlogo_l-blue_d-blue.png"
+        />
         <BrevoSubscribeStyles />
         <script>
             document.location.href = '/'

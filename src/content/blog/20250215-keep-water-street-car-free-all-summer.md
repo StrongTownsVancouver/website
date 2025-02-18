@@ -6,13 +6,13 @@ author: Strong Towns Vancouver
 ---
 
 <div class="banner">
-<b><a href="https://actionnetwork.org/letters/keep-water-street-car-free-all-summer">Send a letter as part of campaign here</a></b> and come join us in Gastown on Family Day for our 'ghetti in Gastown event! Monday, Feb 17th at 12pm (sharp). Near the Gastown Steam Clock.
+<b><a href="https://actionnetwork.org/letters/keep-water-street-car-free-all-summer">Send a letter as part of campaign here!</a></b> It takes only a few clicks and a few minutes! Your voice matters in making Water Street a vibrant and exciting car-free destination!
 </div>
 
 </br>
 </br>
 
-<center><img class="max-w-4xl" src="/blog-assets/20250215-keep-water-street-car-free-all-summer/ghetti-gastown-banner.png" alt="'ghetti Gastown banner"></center>
+<center><img class="blog-image" src="/blog-assets/20250215-keep-water-street-car-free-all-summer/ghetti-gastown-banner.png" alt="'ghetti Gastown banner"></center>
 </br>
 </br>
 

@@ -15,7 +15,7 @@ author: Strong Towns Vancouver
 
 </br>
 
-<center><img class="max-w-3xl" src="/blog-assets/20241006-bc-2024-election-an-urbanist-guide/guide.png" alt="How do BC’s three main parties compare on urbanist priorities?"></center>
+<center><img class="blog-image" src="/blog-assets/20241006-bc-2024-election-an-urbanist-guide/guide.png" alt="How do BC’s three main parties compare on urbanist priorities?"></center>
 <center>How do BC’s three main parties compare on urbanist priorities?</center><br/>
 
 British Columbia is holding an election on October 19th to decide the next Premier of the province. The party that wins will influence how much housing costs, whether traffic is clogging the city, and if our cities can thrive.
