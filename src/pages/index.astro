@@ -9,44 +9,172 @@ import BrevoSubscribeStyles from '../components/BrevoSubscribeStyles.astro'
 import BrevoMiniForm from '../components/BrevoMiniForm.astro'
 import BrevoScripts from '../components/BrevoScripts.astro'
 
-const INDEX_PAGE_BLOG_POSTS_LIMIT = 4
-const MAX_TITLE_LENGTH = 50
+const INDEX_PAGE_BLOG_POSTS_LIMIT = 6
+const MAX_TITLE_LENGTH = 45
 const PAGE_TITLE = `${SITE_TITLE}`
 ---
 
 <!doctype html>
 <html lang="en">
     <head>
-        <BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
+        <BaseHead
+            title={PAGE_TITLE}
+            description={SITE_DESCRIPTION}
+            image="logo/stvanlogo_l-blue_d-blue.png"
+        />
         <BrevoSubscribeStyles />
     </head>
     <body>
-        <Header />
-        <ContentWithBackground background="/bus-9.jpg">
-            <main class="md:pt-12 max-w-7xl flex md:flex-row flex-col">
-                <div class="mr-4 pl-2 md:py-8 content-center">
-                    <h2
-                        class="font-fraunces m-0 md:text-5xl text-4xl font-bold mb-2 text-white md:py-6"
+        <main>
+            <ContentWithBackground background="/bus-9.jpg">
+                <section
+                    class="m-auto max-w-7xl flex px-8 py-5 flex-col md:pt-14 md:flex-row xl:px-0"
+                >
+                    <div class="mr-4 content-center">
+                        <div class="mb-8 md:mb-8">
+                            <img
+                                src={'/logo/stvanlogo_white.png'}
+                                alt={SITE_TITLE}
+                                width={125}
+                            />
+                        </div>
+                        <h2
+                            class="font-mixta font-bold text-4xl m-0 mb-2 text-white md:text-5xl md:py-3"
+                        >
+                            We're dedicated to making Vancouver strong and
+                            resilient
+                        </h2>
+                        <p
+                            class="font-freight text-base py-3 md:py-6 md:text-lg"
+                        >
+                            Welcome to Strong Towns Vancouver. Here, you'll find
+                            thought-provoking articles, information about
+                            upcoming events, and resources to aid in
+                            understanding and implementing our mission. We're
+                            glad you're here and can't wait for you to join us
+                            on this journey.
+                        </p>
+                    </div>
+                    <div class="md:ml-4 mt-4 md:mt-0 md:min-w-96">
+                        <BrevoMiniForm />
+                    </div>
+                </section>
+            </ContentWithBackground>
+            <BlogPostPreviewList
+                postsLimit={INDEX_PAGE_BLOG_POSTS_LIMIT}
+                maxTitleLength={MAX_TITLE_LENGTH}
+            />
+            <ContentWithBackground background="/bus-on-41st.jpg">
+                <section
+                    class="m-auto max-w-7xl py-12 px-8 md:flex md:flex-col md:items-center md:mx-auto xl:px-0"
+                >
+                    <div
+                        class="max-w-7xl text-white grid grid-cols-1 md:grid-cols-4"
                     >
-                        We're dedicated to making Vancouver strong and resilient
+                        <h2
+                            class="font-mixta font-bold m-0 text-4xl md:mx-8 mb-6"
+                        >
+                            About us
+                        </h2>
+                        <div
+                            class="m-auto font-freight text-lg md:mx-0 md:col-start-2 md:col-span-3 md:text-base"
+                        >
+                            <p class="mb-4">
+                                Strong Towns is a global movement that has set
+                                its sights on transforming the way we envision
+                                and build our communities. The movement is
+                                rooted in a deep-seated passion for urban
+                                development and public policy, with a mission to
+                                foster sustainability, resilience, and vibrancy
+                                in communities across the globe. We exist to
+                                challenge conventional thinking, pushing
+                                boundaries and provoking fresh perspectives on
+                                urban development. Our goal is not just to
+                                inspire a new generation of urbanists, but to
+                                empower them to take action and drive change in
+                                their own communities.
+                            </p>
+                            <p class="mb-4">
+                                Established in late 2023, Strong Towns Vancouver
+                                is a piece of this dynamic global movement. We
+                                are more than just a local chapter – we are a
+                                local conversation! A collective of individuals
+                                from all sorts of personal and professional
+                                backgrounds dedicated to fostering a stronger
+                                and more resilient Vancouver. Our focus is on
+                                promoting models of development that will
+                                sustain and strengthen our city in the long
+                                term.
+                            </p>
+                            <p class="mb-4">
+                                We understand that building a stronger city goes
+                                beyond the physical infrastructure. It means
+                                cultivating a culture of thought-provoking
+                                conversations and engaging events that bring
+                                people together. It means providing valuable
+                                resources to help our community understand and
+                                implement our mission. But most importantly, it
+                                means driving action, no matter how small.
+                            </p>
+                            <p class="mb-4">
+                                We believe that each one of us has a role to
+                                play in making Vancouver stronger and more
+                                vibrant. Whether it's participating in a local
+                                event, contributing to a discussion, or simply
+                                spreading the word about our mission, every
+                                action counts. We invite you to join us on this
+                                transformative journey. Embrace the opportunity
+                                to be a part of a global change. Let's work to
+                                create a stronger, more resilient Vancouver,
+                                together!
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </ContentWithBackground>
+            <section
+                class="m-auto max-w-7xl py-12 px-8 md:flex md:flex-col md:items-center md:mx-auto xl:px-0"
+            >
+                <div
+                    class="max-w-7xl text-st-black grid grid-cols-1 md:grid-cols-4"
+                >
+                    <h2
+                        class="font-mixta font-bold m-0 text-4xl md:mx-8 mb-6 md:col-start-1 md:col-span-1"
+                    >
+                        Get involved
                     </h2>
-                    <p class="md:py-6 py-3 md:text-lg text-sm font-atkinson">
-                        Welcome to Strong Towns Vancouver. Here, you'll find
-                        thought-provoking articles, information about upcoming
-                        events, and resources to aid in understanding and
-                        implementing our mission. We're glad you're here and
-                        can't wait for you to join us on this journey.
-                    </p>
+                    <div
+                        class="m-auto font-freight text-lg md:mx-0 md:text-base md:col-start-2 md:col-span-3"
+                    >
+                        <p class="mb-4">
+                            This is only the start! Our ambitious community
+                            encompasses individuals of all ages, professions,
+                            and backgrounds, united by our passion for
+                            walkability, accessibility, housing, and transit.
+                            Prepare yourself for engaging and fun community
+                            advocacy opportunities to help enhance Vancouver for
+                            everyone. Your voice, ideas, and skills enrich our
+                            community as we implement our shared vision. Let's
+                            work together to reshape Vancouver, together!
+                        </p>
+                        <h3 class="font-mixta font-semibold text-2xl mb-4">
+                            Our Events
+                        </h3>
+                        <iframe
+                            src="https://embed.styledcalendar.com/#itqSaKdVwkGqwxlBNgyB"
+                            title="Styled Calendar"
+                            class="styled-calendar-container"
+                            style="width: 100%; border: 1px solid; margin: 0;"
+                            data-cy="calendar-embed-iframe"></iframe>
+                        <script
+                            async
+                            type="module"
+                            src="https://embed.styledcalendar.com/assets/parent-window.js"
+                        ></script>
+                    </div>
                 </div>
-                <div class="md:ml-4 mt-4 md:mt-0 md:min-w-96">
-                    <BrevoMiniForm />
-                </div>
-            </main>
-        </ContentWithBackground>
-        <BlogPostPreviewList
-            postsLimit={INDEX_PAGE_BLOG_POSTS_LIMIT}
-            maxTitleLength={MAX_TITLE_LENGTH}
-        />
+            </section>
+        </main>
 
         <Footer />
         <BrevoScripts />

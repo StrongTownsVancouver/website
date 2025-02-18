@@ -17,22 +17,23 @@ const PAGE_TITLE = `Articles - ${SITE_TITLE}`
 <!doctype html>
 <html lang="en">
     <head>
-        <BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
+        <BaseHead
+            title={PAGE_TITLE}
+            description={SITE_DESCRIPTION}
+            image="logo/stvanlogo_l-blue_d-blue.png"
+        />
     </head>
     <body>
         <Header />
-        <PageTitle title="Articles" image="/bus-on-41st.jpg" />
-        <main class="max-w-5xl">
-            <p>
-                Welcome to our articles section! This is your go-to destination
-                for all the latest happenings, actions, and local news from
-                Strong Towns Vancouver. Here, we share our initiatives,
-                breakthroughs, and upcoming events shaping our city. Stay
-                informed and engaged as we work together to create a stronger,
-                more resilient Vancouver.
-            </p>
+        <PageTitle
+            title="All Strong Towns Vancouver Articles"
+            image="/bus-on-41st.jpg"
+        />
+        <main class="m-auto max-w-5xl">
             <section class="mt-12">
-                <ul class="flex flex-wrap gap-8 list-none m-0 p-1">
+                <ul
+                    class="flex justify-center flex-wrap gap-8 list-none m-0 p-1 px-6 md:px-1"
+                >
                     {
                         posts.map((post) => (
                             <li class="md:w-[calc(50%-1rem)] md:first:w-full md:first:mb-4 mb-4 text-center">
@@ -40,15 +41,20 @@ const PAGE_TITLE = `Articles - ${SITE_TITLE}`
                                     href={`/blog/${post.slug}/`}
                                     class="block no-underline transition-all duration-200 hover:text-accent"
                                 >
-                                    <img
+                                    {/* <img
                                         src={post.data.heroImage}
                                         alt={post.data.title}
                                         class="mb-2 rounded-lg object-cover md:h-[360px] md:max-h-[360px] h-[280px] max-h-[280px] first:w-full"
+                                    /> */}
+                                    <img
+                                        src={post.data.heroImage}
+                                        alt={post.data.title}
+                                        class="mb-2 rounded-lg object-cover h-64 md:h-72 lg:h-80 first:w-full"
                                     />
-                                    <h3 class="font-synthese mt-6 mb-2 m-0 text-2xl text-black leading-none">
+                                    <h3 class="font-synthese mt-6 mb-2 m-0 text-2xl text-st-black leading-none">
                                         {post.data.title}
                                     </h3>
-                                    <p class="font-synthese text-base py-1 text-black">
+                                    <p class="font-synthese text-base py-1 text-st-black">
                                         <FormattedDate
                                             date={post.data.pubDate}
                                         />

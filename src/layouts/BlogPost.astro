@@ -22,6 +22,8 @@ const pageTitle = `${title} - ${SITE_TITLE}`
             image={heroImage}
         />
         <style is:global>
+            @reference "../styles/global.css";
+
             main * ul,
             main * ol {
                 list-style: revert;
@@ -43,34 +45,19 @@ const pageTitle = `${title} - ${SITE_TITLE}`
             }
 
             main * h2 {
-                @apply md:text-4xl text-2xl mb-6;
+                @apply md:text-4xl text-2xl font-semibold;
             }
 
             main * h3 {
-                @apply md:text-3xl text-xl mb-4;
-            }
-
-            main * blockquote {
-                border-left: 6px solid #a7c6ed;
-                border-top-left-radius: 1rem;
-                border-bottom-left-radius: 1rem;
-                padding: 0 1rem;
-                margin: 0 20px 20px;
-                font-size: 1.3rem;
-            }
-
-            blockquote > p {
-                @apply md:text-xl md:leading-9 leading-7;
-                padding-top: 5px;
-                padding-bottom: 5px;
+                @apply md:text-3xl text-xl text-st-callout-text font-semibold;
             }
         </style>
     </head>
 
     <body>
         <Header />
-        <main class="max-w-5xl m-0 mx-auto">
-            <article>
+        <main class="max-w-5xl m-0 mx-auto px-8 md:px-0">
+            <article class="mb-10">
                 <div class="w-full">
                     {
                         heroImage && (
@@ -83,20 +70,26 @@ const pageTitle = `${title} - ${SITE_TITLE}`
                     }
                 </div>
                 <div class="w-full max-w-[calc(100% - 2em)] m-auto p-4">
-                    <div class="mb-12 py-4 px-0 text-center md:text-lg text-sm">
-                        <div class="md:flex md:justify-center">
-                            <div class="md:mb-2 px-1">
+                    <div class="py-4 px-0 text-center md:text-lg text-sm">
+                        <h2
+                            class="font-synthese font-bold my-0 md:text-4xl text-3xl"
+                        >
+                            {title}
+                        </h2>
+                        <div class="font-freight text-base md:text-lg">
+                            <div class="inline-block md:mb-2">
                                 Posted on
                                 <FormattedDate date={pubDate} />
                             </div>
-                            <span class="mb-2 px-1">by {author}</span>
+                            <span class="inline-block md:mb-2">by {author}</span
+                            >
                             {
                                 updatedDate && (
                                     <>
-                                        <span class="mb-2 px-1 hidden md:block">
+                                        <span class="hidden md:mb-2 md:inline-block">
                                             |
                                         </span>
-                                        <div class="mb-2 px-1">
+                                        <div class="inline-block md:mb-2">
                                             Last updated on
                                             <FormattedDate date={updatedDate} />
                                         </div>
@@ -104,14 +97,17 @@ const pageTitle = `${title} - ${SITE_TITLE}`
                                 )
                             }
                         </div>
-                        <h2 class="font-synthese my-2 md:text-4xl text-3xl">
-                            {title}
-                        </h2>
-                        <span class="font-synthese my-4 text-lg"
-                            >{description}</span
-                        >
+                        {
+                            description && (
+                                <div class="font-synthese mt-2 md:mt-0 md:mb-2 text-base md:text-lg">
+                                    {description}
+                                </div>
+                            )
+                        }
                     </div>
-                    <slot />
+                    <div class="font-freight text-base mt-8">
+                        <slot />
+                    </div>
                 </div>
             </article>
         </main>

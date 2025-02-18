@@ -1,126 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-    --black: 15, 18, 25;
-    --gray: 96, 115, 159;
-    --gray-light: 229, 233, 240;
-    --gray-dark: 34, 41, 57;
-    --gray-gradient: rgba(var(--gray-light), 50%), #fff;
+@theme {
+    --font-mixta: mixta-sharp, serif;
+    --font-synthese: synthese, sans-serif;
+    --font-freight: freight-text-pro, serif;
+
+    --color-st-black: #0c2440;
+    --color-st-yellow: #ffb549;
+    --color-st-lightblue: #a7c6ed;
+    --color-st-lightblue-accessible: #5790db;
+    --color-st-gray: #60739F;
+    --color-st-gray-dark: #222939;
+    --color-st-callout: #E5E3DD;
+    --color-st-callout-text: #0c2340;
 }
 
-@font-face {
-    font-family: 'Atkinson';
-    src: url('/fonts/atkinson-regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
+@layer utilities {
+    .blog-image {
+        @apply max-w-4xl w-full
+    }
 
-@font-face {
-    font-family: 'Atkinson';
-    src: url('/fonts/atkinson-bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Synthese Web';
-    src: url('/fonts/syntheseweb-regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Synthese Web';
-    src: url('/fonts/syntheseweb-bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Fraunces';
-    src: url('/fonts/fraunces-soft-semibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+    .banner {
+        @apply text-lg pl-8 p-5 py-8 bg-st-callout rounded-lg mx-0 m-0 mt-1 md:mx-5;
+    }
 }
 
 body {
-    font-family: 'MixtaSharp', sans-serif;
     margin: 0;
     padding: 0;
-    text-align: left;
-    background: linear-gradient(var(--gray-gradient)) no-repeat;
-    background-size: 100% 600px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    color: rgb(var(--gray-dark));
-
-    @apply text-lg leading-7;
+    color: var(--color-st-black);
 }
 
-main {
-    max-width: calc(100% - 2em);
-    margin: auto;
-    padding: 3em 1em;
+.grecaptcha-badge {
+    visibility: hidden;
 }
-
-strong,
-b {
-    font-weight: 700;
-}
-
-p {
-    margin-bottom: 1em;
-}
-
-textarea {
-    width: 100%;
-    font-size: 16px;
-}
-
-input {
-    font-size: 16px;
-}
-
-table {
-    width: 100%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-code {
-    padding: 2px 5px;
-    background-color: rgb(var(--gray-light));
-    border-radius: 2px;
-}
-
-pre {
-    padding: 1.5em;
-    border-radius: 8px;
-}
-
-pre>code {
-    all: unset;
-}
-
-@media (max-width: 720px) {
-    body {
-        font-size: 18px;
-    }
-
-    main {
-        padding: 1em;
-    }
-}
-
-.grecaptcha-badge { visibility: hidden; }
