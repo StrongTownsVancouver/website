@@ -5,6 +5,9 @@
   "frontMatter.website.host": "https://strongtownsvan.org/",
   "frontMatter.framework.startCommand": "pnpm run dev",
   "frontMatter.git.enabled": true,
+  "frontMatter.git.requiresCommitMessage": [
+    "main"
+  ],
   "frontMatter.content.publicFolder": "public",
   "frontMatter.content.supportedFileTypes": [
     "md",
@@ -24,7 +27,7 @@
       "previewPath": "blog",
       "pageBundle": false,
       "clearEmpty": true,
-      "filePrefix": "yyyyMMdd",
+      "filePrefix": "{{year}}{{month}}{{day}}",
       "fields": [
         {
           "name": "title",
@@ -65,5 +68,33 @@
         }
       ]
     }
-  ]
+  ],
+  "frontMatter.content.snippets": {
+    "Image": {
+      "description": "",
+      "body": [
+        "<center><img class=\"blog-image\" src=\"[[&mediaUrl]]\" alt=\"[[alt]]\"></center>",
+        "<center>Image description goes here...</center>"
+      ],
+      "isMediaSnippet": true
+    },
+    "Image with Description": {
+      "description": "",
+      "body": "<center><img class=\"blog-image\" src=\"[[&mediaUrl]]\" alt=\"[[alt]]\"></center>",
+      "isMediaSnippet": true
+    },
+    "Double Break": {
+      "description": "Template for a new image with description",
+      "body": [
+        "<br>",
+        "<br>"
+      ],
+      "fields": []
+    },
+    "Break": {
+      "description": "Template for a new image with description",
+      "body": "<br>",
+      "fields": []
+    }
+  }
 }

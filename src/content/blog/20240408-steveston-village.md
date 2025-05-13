@@ -5,7 +5,7 @@ description: 'A Close Look at Proposed Bus Exchange Impacts'
 pubDate: 'Apr 04 2024'
 updatedDate: 'May 20 2024'
 heroImage: '/blog-assets/20240408-steveston-village/steveston-image-1.jpg'
-author: 'Manav Sharma'
+author: 'Nav'
 ---
 
 ## Introduction
