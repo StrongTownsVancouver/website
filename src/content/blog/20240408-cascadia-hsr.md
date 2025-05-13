@@ -4,7 +4,7 @@ title: 'Cascadia High-Speed Rail Project'
 description: 'Project Connecting Vancouver and Seattle is being Considered'
 pubDate: 'Apr 04 2024'
 heroImage: '/blog-assets/20240408-cascadia-hsr/amtrak-cascades-airo-venture-train-5.jpg'
-author: 'Manav Sharma'
+author: 'Nav'
 ---
 
 Imagine zipping between the vibrant cities of Vancouver and Seattle in under an hour, with enhanced customs processes and a greener footprint! This might soon become a reality, thanks to the ambitious Cascadia High-Speed Rail project.

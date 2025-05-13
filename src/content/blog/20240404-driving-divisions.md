@@ -5,7 +5,7 @@ description: ''
 pubDate: 'Apr 08 2024'
 updatedDate: 'May 20 2024'
 heroImage: '/blog-assets/20240404-driving-divisions/car-dependency.png'
-author: 'Manav Sharma'
+author: 'Nav'
 ---
 
 ## Introduction
