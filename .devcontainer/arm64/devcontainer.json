@@ -1,5 +1,5 @@
 {
-    "name": "Debian Container (amd64)",
+    "name": "Debian Container (arm64)",
     "dockerFile": "../Dockerfile",
     "containerUser": "dev",
     "workspaceMount": "source=${localWorkspaceFolder},target=/home/dev/workspace,type=bind",
@@ -7,8 +7,8 @@
     "postCreateCommand": "pnpm install",
     "build": {
         "args": {
-            "PLATFORM": "linux/amd64",
-            "NODE_PLATFORM": "linux-x64"
+            "PLATFORM": "linux/arm64",
+            "NODE_PLATFORM": "linux-arm64"
         }
     },
     "customizations": {

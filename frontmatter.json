@@ -96,5 +96,6 @@
       "body": "<br>",
       "fields": []
     }
-  }
+  },
+  "frontMatter.dashboard.openOnStart": true
 }
