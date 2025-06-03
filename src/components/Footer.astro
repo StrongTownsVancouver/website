@@ -1,10 +1,10 @@
 ---
-import SvgLink from './SvgLink.astro'
-import '../styles/global.css'
+import SvgLink from './SvgLink.astro';
+import '../styles/global.css';
 
 interface LearnMoreLink {
-    name: string
-    link: string
+    name: string;
+    link: string;
 }
 
 const links: LearnMoreLink[] = [
@@ -24,9 +24,9 @@ const links: LearnMoreLink[] = [
         name: 'Del-POP',
         link: 'https://delpop.ca/',
     },
-]
+];
 
-const today = new Date()
+const today = new Date();
 ---
 
 <footer class="text-center bg-st-black text-white pt-8 px-4 pb-20">
@@ -97,7 +97,7 @@ const today = new Date()
         </div>
     </div>
 
-    <p class="font-freight text-base max-w-4xl m-0 mx-auto">
+    <p class="font-mixta text-base max-w-4xl m-0 mx-auto">
         &copy; {today.getFullYear()} Strong Towns Vancouver. Strong Towns Vancouver
         is the local conversation for Vancouver, BC, Canada. We believe in creating
         communities which work for everyone. Vancouver is situated on the unceded

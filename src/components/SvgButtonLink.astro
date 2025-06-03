@@ -1,0 +1,18 @@
+---
+interface Props {
+    text: string;
+    href: string;
+    hoverColor: string;
+}
+
+const { text, href, hoverColor }: Props = Astro.props;
+---
+
+<a
+    class=`inline-flex font-synthese items-center gap-2 p-3 border group border-solid rounded-xl border-b-white cursor-pointer hover:border-b-${hoverColor} hover:text-${hoverColor} transition-colors hover:opacity-95`
+    href={href}
+    target="_blank"
+>
+    <slot />
+    <span>{text}</span>
+</a>
