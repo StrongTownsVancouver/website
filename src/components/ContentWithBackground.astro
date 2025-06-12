@@ -1,14 +1,14 @@
 ---
 interface Props {
-    styleClass?: string
-    background: string
+    styleClass?: string;
+    background: string;
 }
 
-const { background, styleClass } = Astro.props
+const { background, styleClass } = Astro.props;
 ---
 
 <div
-    class=`mx-auto h-full overflow-y-scroll bg-cover bg-scroll md:bg-center bg-bottom bg-no-repeat shadow-lg ${styleClass}`
+    class=`mx-auto h-full bg-cover md:bg-center bg-bottom bg-no-repeat shadow-lg ${styleClass || ''}`
     style={`background-image: url('${background}')`}
 >
     <div
