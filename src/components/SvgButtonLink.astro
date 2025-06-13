@@ -2,10 +2,11 @@
 interface Props {
     text: string;
     href: string;
+    target?: '_blank' | '_parent' | '_top' | '_self';
     hoverColor: 'st-lightblue-accessible';
 }
 
-const { text, href, hoverColor }: Props = Astro.props;
+const { text, href, hoverColor, target = '_self' }: Props = Astro.props;
 
 const hoverBorderColor =
     hoverColor === 'st-lightblue-accessible'
@@ -19,11 +20,12 @@ const hoverTextColor =
 
 <a
     class:list={[
-        'inline-flex',
+        'flex',
         'font-synthese',
         'items-center',
         'gap-2',
         'p-3',
+        'h-12',
         'border',
         'group',
         'border-solid',
@@ -36,8 +38,8 @@ const hoverTextColor =
         'hover:opacity-95',
     ]}
     href={href}
-    target="_blank"
+    target={target}
 >
-    <slot />
+    {!!Astro.slots.default && Astro.slots.has('default') ? <slot /> : null}
     <span>{text}</span>
 </a>
