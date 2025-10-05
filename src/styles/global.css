@@ -4,7 +4,14 @@
     --font-mixta: mixta-sharp, serif;
     --font-synthese: synthese, sans-serif;
     --font-freight: freight-text-pro, serif;
-
+    /* suggested colors */
+    --color-vp-purple: #663399;
+    --color-vp-cyan: #ccffff;
+    --color-vp-bright-yellow: #ffff66;
+    /* modified colors */
+    --color-vp-sage: #5E9999;
+    --color-vp-bronze: #C4A366;
+    --color-vp-coral: #E17B7B;
     --color-st-black: #0c2440;
     --color-st-yellow: #ffb549;
     --color-st-lightblue: #a7c6ed;
